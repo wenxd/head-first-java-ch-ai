@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>《Head First Java》第 9 章译文索引 · p246–256</title>
+<title>《Head First Java》译文索引 · p245–671</title>
 <style>
   :root {
     --bg: #faf7f0; --bg2: #f2ede2; --ink: #2b2620; --muted: #7a7166;
@@ -17,436 +17,16 @@
   .page { max-width:760px; margin:0 auto; padding:3rem 1.5rem 4rem; }
   h1 { font-size:1.9rem; margin:0 0 0.3rem; font-weight:800; }
   .subtitle { color:var(--muted); font-size:0.95rem; margin-bottom:2.2rem; }
-  ol { padding:0; margin:1.5rem 0; list-style:none; counter-reset:pg; }
+  ol { padding:0; margin:1.5rem 0; list-style:none; counter-reset:pg 244; }
   li { counter-increment:pg; margin:0.6rem 0; }
+  li.skip { counter-increment:pg 2; }
   a { display:flex; gap:1rem; align-items:baseline; text-decoration:none; color:var(--ink);
     background:var(--bg2); border:1px solid var(--rule); border-radius:10px;
     padding:0.8rem 1.2rem; transition:transform .12s ease; }
   a:hover { transform:translateX(4px); border-color:var(--accent); }
-  a::before { content:"p" counter(pg, decimal-leading-zero); flex:none;
+  a::before { content:"p" counter(pg); flex:none;
     font-family:-apple-system,"PingFang SC",sans-serif; font-weight:700;
     color:var(--accent); font-size:0.85rem; min-width:2.6rem; }
-  li:nth-child(1) a::before { content:"p246"; }
-  li:nth-child(2) a::before { content:"p247"; }
-  li:nth-child(3) a::before { content:"p248"; }
-  li:nth-child(4) a::before { content:"p249"; }
-  li:nth-child(5) a::before { content:"p250"; }
-  li:nth-child(6) a::before { content:"p251"; }
-  li:nth-child(7) a::before { content:"p252"; }
-  li:nth-child(8) a::before { content:"p253"; }
-  li:nth-child(9) a::before { content:"p254"; }
-  li:nth-child(10) a::before { content:"p255"; }
-  li:nth-child(11) a::before { content:"p256"; }
-  li:nth-child(12) a::before { content:"p257"; }
-  li:nth-child(13) a::before { content:"p258"; }
-  li:nth-child(14) a::before { content:"p259"; }
-  li:nth-child(15) a::before { content:"p260"; }
-  li:nth-child(16) a::before { content:"p261"; }
-  li:nth-child(17) a::before { content:"p262"; }
-  li:nth-child(18) a::before { content:"p263"; }
-  li:nth-child(19) a::before { content:"p264"; }
-  li:nth-child(20) a::before { content:"p265"; }
-  li:nth-child(21) a::before { content:"p266"; }
-  li:nth-child(22) a::before { content:"p267"; }
-  li:nth-child(23) a::before { content:"p268"; }
-  li:nth-child(24) a::before { content:"p269"; }
-  li:nth-child(25) a::before { content:"p270"; }
-  li:nth-child(26) a::before { content:"p271"; }
-  li:nth-child(27) a::before { content:"p272"; }
-  li:nth-child(28) a::before { content:"p273"; }
-  li:nth-child(29) a::before { content:"p275"; }
-  li:nth-child(30) a::before { content:"p276"; }
-  li:nth-child(31) a::before { content:"p277"; }
-  li:nth-child(32) a::before { content:"p278"; }
-  li:nth-child(33) a::before { content:"p279"; }
-  li:nth-child(34) a::before { content:"p280"; }
-  li:nth-child(35) a::before { content:"p281"; }
-  li:nth-child(36) a::before { content:"p282"; }
-  li:nth-child(37) a::before { content:"p283"; }
-  li:nth-child(38) a::before { content:"p284"; }
-  li:nth-child(39) a::before { content:"p285"; }
-  li:nth-child(40) a::before { content:"p286"; }
-  li:nth-child(41) a::before { content:"p287"; }
-  li:nth-child(42) a::before { content:"p288"; }
-  li:nth-child(43) a::before { content:"p289"; }
-  li:nth-child(44) a::before { content:"p290"; }
-  li:nth-child(45) a::before { content:"p291"; }
-  li:nth-child(46) a::before { content:"p292"; }
-  li:nth-child(47) a::before { content:"p293"; }
-  li:nth-child(48) a::before { content:"p294"; }
-  li:nth-child(49) a::before { content:"p295"; }
-  li:nth-child(50) a::before { content:"p296"; }
-  li:nth-child(51) a::before { content:"p297"; }
-  li:nth-child(52) a::before { content:"p298"; }
-  li:nth-child(53) a::before { content:"p299"; }
-  li:nth-child(54) a::before { content:"p300"; }
-  li:nth-child(55) a::before { content:"p301"; }
-  li:nth-child(56) a::before { content:"p302"; }
-  li:nth-child(57) a::before { content:"p303"; }
-  li:nth-child(58) a::before { content:"p304"; }
-  li:nth-child(59) a::before { content:"p305"; }
-  li:nth-child(60) a::before { content:"p306"; }
-  li:nth-child(61) a::before { content:"p307"; }
-  li:nth-child(62) a::before { content:"p308"; }
-  li:nth-child(63) a::before { content:"p309"; }
-  li:nth-child(64) a::before { content:"p310"; }
-  li:nth-child(65) a::before { content:"p311"; }
-  li:nth-child(66) a::before { content:"p312"; }
-  li:nth-child(67) a::before { content:"p313"; }
-  li:nth-child(68) a::before { content:"p314"; }
-  li:nth-child(69) a::before { content:"p315"; }
-  li:nth-child(70) a::before { content:"p316"; }
-  li:nth-child(71) a::before { content:"p317"; }
-  li:nth-child(72) a::before { content:"p318"; }
-  li:nth-child(73) a::before { content:"p319"; }
-  li:nth-child(74) a::before { content:"p320"; }
-  li:nth-child(75) a::before { content:"p321"; }
-  li:nth-child(76) a::before { content:"p322"; }
-  li:nth-child(77) a::before { content:"p323"; }
-  li:nth-child(78) a::before { content:"p324"; }
-  li:nth-child(79) a::before { content:"p325"; }
-  li:nth-child(80) a::before { content:"p326"; }
-  li:nth-child(81) a::before { content:"p327"; }
-  li:nth-child(82) a::before { content:"p328"; }
-  li:nth-child(83) a::before { content:"p329"; }
-  li:nth-child(84) a::before { content:"p330"; }
-  li:nth-child(85) a::before { content:"p331"; }
-  li:nth-child(86) a::before { content:"p332"; }
-  li:nth-child(87) a::before { content:"p333"; }
-  li:nth-child(88) a::before { content:"p334"; }
-  li:nth-child(89) a::before { content:"p335"; }
-  li:nth-child(90) a::before { content:"p336"; }
-  li:nth-child(91) a::before { content:"p337"; }
-  li:nth-child(92) a::before { content:"p338"; }
-  li:nth-child(93) a::before { content:"p339"; }
-  li:nth-child(94) a::before { content:"p340"; }
-  li:nth-child(95) a::before { content:"p341"; }
-  li:nth-child(96) a::before { content:"p342"; }
-  li:nth-child(97) a::before { content:"p343"; }
-  li:nth-child(98) a::before { content:"p344"; }
-  li:nth-child(99) a::before { content:"p345"; }
-  li:nth-child(100) a::before { content:"p346"; }
-  li:nth-child(101) a::before { content:"p347"; }
-  li:nth-child(102) a::before { content:"p348"; }
-  li:nth-child(103) a::before { content:"p349"; }
-  li:nth-child(104) a::before { content:"p350"; }
-  li:nth-child(105) a::before { content:"p351"; }
-  li:nth-child(106) a::before { content:"p352"; }
-  li:nth-child(107) a::before { content:"p353"; }
-  li:nth-child(108) a::before { content:"p354"; }
-  li:nth-child(109) a::before { content:"p355"; }
-  li:nth-child(110) a::before { content:"p356"; }
-  li:nth-child(111) a::before { content:"p357"; }
-  li:nth-child(112) a::before { content:"p358"; }
-  li:nth-child(113) a::before { content:"p359"; }
-  li:nth-child(114) a::before { content:"p360"; }
-  li:nth-child(115) a::before { content:"p361"; }
-  li:nth-child(116) a::before { content:"p362"; }
-  li:nth-child(117) a::before { content:"p363"; }
-  li:nth-child(118) a::before { content:"p364"; }
-  li:nth-child(119) a::before { content:"p365"; }
-  li:nth-child(120) a::before { content:"p366"; }
-  li:nth-child(121) a::before { content:"p367"; }
-  li:nth-child(122) a::before { content:"p369"; }
-  li:nth-child(123) a::before { content:"p370"; }
-  li:nth-child(124) a::before { content:"p371"; }
-  li:nth-child(125) a::before { content:"p372"; }
-  li:nth-child(126) a::before { content:"p373"; }
-  li:nth-child(127) a::before { content:"p374"; }
-  li:nth-child(128) a::before { content:"p375"; }
-  li:nth-child(129) a::before { content:"p376"; }
-  li:nth-child(130) a::before { content:"p377"; }
-  li:nth-child(131) a::before { content:"p378"; }
-  li:nth-child(132) a::before { content:"p379"; }
-  li:nth-child(133) a::before { content:"p380"; }
-  li:nth-child(134) a::before { content:"p381"; }
-  li:nth-child(135) a::before { content:"p382"; }
-  li:nth-child(136) a::before { content:"p383"; }
-  li:nth-child(137) a::before { content:"p384"; }
-  li:nth-child(138) a::before { content:"p385"; }
-  li:nth-child(139) a::before { content:"p386"; }
-  li:nth-child(140) a::before { content:"p387"; }
-  li:nth-child(141) a::before { content:"p388"; }
-  li:nth-child(142) a::before { content:"p389"; }
-  li:nth-child(143) a::before { content:"p390"; }
-  li:nth-child(144) a::before { content:"p391"; }
-  li:nth-child(145) a::before { content:"p392"; }
-  li:nth-child(146) a::before { content:"p393"; }
-  li:nth-child(147) a::before { content:"p394"; }
-  li:nth-child(148) a::before { content:"p395"; }
-  li:nth-child(149) a::before { content:"p396"; }
-  li:nth-child(150) a::before { content:"p397"; }
-  li:nth-child(151) a::before { content:"p398"; }
-  li:nth-child(152) a::before { content:"p399"; }
-  li:nth-child(153) a::before { content:"p400"; }
-  li:nth-child(154) a::before { content:"p401"; }
-  li:nth-child(155) a::before { content:"p402"; }
-  li:nth-child(156) a::before { content:"p403"; }
-  li:nth-child(157) a::before { content:"p404"; }
-  li:nth-child(158) a::before { content:"p405"; }
-  li:nth-child(159) a::before { content:"p406"; }
-  li:nth-child(160) a::before { content:"p407"; }
-  li:nth-child(161) a::before { content:"p408"; }
-  li:nth-child(162) a::before { content:"p409"; }
-  li:nth-child(163) a::before { content:"p410"; }
-  li:nth-child(164) a::before { content:"p411"; }
-  li:nth-child(165) a::before { content:"p412"; }
-  li:nth-child(166) a::before { content:"p413"; }
-  li:nth-child(167) a::before { content:"p414"; }
-  li:nth-child(168) a::before { content:"p415"; }
-  li:nth-child(169) a::before { content:"p416"; }
-  li:nth-child(170) a::before { content:"p417"; }
-  li:nth-child(171) a::before { content:"p418"; }
-  li:nth-child(172) a::before { content:"p419"; }
-  li:nth-child(173) a::before { content:"p420"; }
-  li:nth-child(174) a::before { content:"p421"; }
-  li:nth-child(175) a::before { content:"p422"; }
-  li:nth-child(176) a::before { content:"p423"; }
-  li:nth-child(177) a::before { content:"p424"; }
-  li:nth-child(178) a::before { content:"p425"; }
-  li:nth-child(179) a::before { content:"p426"; }
-  li:nth-child(180) a::before { content:"p427"; }
-  li:nth-child(181) a::before { content:"p428"; }
-  li:nth-child(182) a::before { content:"p429"; }
-  li:nth-child(183) a::before { content:"p430"; }
-  li:nth-child(184) a::before { content:"p431"; }
-  li:nth-child(185) a::before { content:"p432"; }
-  li:nth-child(186) a::before { content:"p433"; }
-  li:nth-child(187) a::before { content:"p434"; }
-  li:nth-child(188) a::before { content:"p435"; }
-  li:nth-child(189) a::before { content:"p436"; }
-  li:nth-child(190) a::before { content:"p437"; }
-  li:nth-child(191) a::before { content:"p438"; }
-  li:nth-child(192) a::before { content:"p439"; }
-  li:nth-child(193) a::before { content:"p440"; }
-  li:nth-child(194) a::before { content:"p441"; }
-  li:nth-child(195) a::before { content:"p442"; }
-  li:nth-child(196) a::before { content:"p443"; }
-  li:nth-child(197) a::before { content:"p444"; }
-  li:nth-child(198) a::before { content:"p445"; }
-  li:nth-child(199) a::before { content:"p446"; }
-  li:nth-child(200) a::before { content:"p447"; }
-  li:nth-child(201) a::before { content:"p448"; }
-  li:nth-child(202) a::before { content:"p449"; }
-  li:nth-child(203) a::before { content:"p450"; }
-  li:nth-child(204) a::before { content:"p451"; }
-  li:nth-child(205) a::before { content:"p452"; }
-  li:nth-child(206) a::before { content:"p453"; }
-  li:nth-child(207) a::before { content:"p454"; }
-  li:nth-child(208) a::before { content:"p455"; }
-  li:nth-child(209) a::before { content:"p456"; }
-  li:nth-child(210) a::before { content:"p457"; }
-  li:nth-child(211) a::before { content:"p458"; }
-  li:nth-child(212) a::before { content:"p459"; }
-  li:nth-child(213) a::before { content:"p461"; }
-  li:nth-child(214) a::before { content:"p462"; }
-  li:nth-child(215) a::before { content:"p463"; }
-  li:nth-child(216) a::before { content:"p464"; }
-  li:nth-child(217) a::before { content:"p465"; }
-  li:nth-child(218) a::before { content:"p466"; }
-  li:nth-child(219) a::before { content:"p467"; }
-  li:nth-child(220) a::before { content:"p468"; }
-  li:nth-child(221) a::before { content:"p469"; }
-  li:nth-child(222) a::before { content:"p470"; }
-  li:nth-child(223) a::before { content:"p471"; }
-  li:nth-child(224) a::before { content:"p472"; }
-  li:nth-child(225) a::before { content:"p473"; }
-  li:nth-child(226) a::before { content:"p474"; }
-  li:nth-child(227) a::before { content:"p475"; }
-  li:nth-child(228) a::before { content:"p476"; }
-  li:nth-child(229) a::before { content:"p477"; }
-  li:nth-child(230) a::before { content:"p478"; }
-  li:nth-child(231) a::before { content:"p479"; }
-  li:nth-child(232) a::before { content:"p480"; }
-  li:nth-child(233) a::before { content:"p481"; }
-  li:nth-child(234) a::before { content:"p482"; }
-  li:nth-child(235) a::before { content:"p483"; }
-  li:nth-child(236) a::before { content:"p484"; }
-  li:nth-child(237) a::before { content:"p485"; }
-  li:nth-child(238) a::before { content:"p486"; }
-  li:nth-child(239) a::before { content:"p487"; }
-  li:nth-child(240) a::before { content:"p488"; }
-  li:nth-child(241) a::before { content:"p489"; }
-  li:nth-child(242) a::before { content:"p490"; }
-  li:nth-child(243) a::before { content:"p491"; }
-  li:nth-child(244) a::before { content:"p492"; }
-  li:nth-child(245) a::before { content:"p493"; }
-  li:nth-child(246) a::before { content:"p494"; }
-  li:nth-child(247) a::before { content:"p495"; }
-  li:nth-child(248) a::before { content:"p496"; }
-  li:nth-child(249) a::before { content:"p497"; }
-  li:nth-child(250) a::before { content:"p498"; }
-  li:nth-child(251) a::before { content:"p499"; }
-  li:nth-child(252) a::before { content:"p500"; }
-  li:nth-child(253) a::before { content:"p501"; }
-  li:nth-child(254) a::before { content:"p502"; }
-  li:nth-child(255) a::before { content:"p503"; }
-  li:nth-child(256) a::before { content:"p504"; }
-  li:nth-child(257) a::before { content:"p505"; }
-  li:nth-child(258) a::before { content:"p506"; }
-  li:nth-child(259) a::before { content:"p507"; }
-  li:nth-child(260) a::before { content:"p508"; }
-  li:nth-child(261) a::before { content:"p509"; }
-  li:nth-child(262) a::before { content:"p510"; }
-  li:nth-child(263) a::before { content:"p511"; }
-  li:nth-child(264) a::before { content:"p512"; }
-  li:nth-child(265) a::before { content:"p513"; }
-  li:nth-child(266) a::before { content:"p514"; }
-  li:nth-child(267) a::before { content:"p515"; }
-  li:nth-child(268) a::before { content:"p516"; }
-  li:nth-child(269) a::before { content:"p517"; }
-  li:nth-child(270) a::before { content:"p518"; }
-  li:nth-child(271) a::before { content:"p519"; }
-  li:nth-child(272) a::before { content:"p520"; }
-  li:nth-child(273) a::before { content:"p521"; }
-  li:nth-child(274) a::before { content:"p522"; }
-  li:nth-child(275) a::before { content:"p523"; }
-  li:nth-child(276) a::before { content:"p524"; }
-  li:nth-child(277) a::before { content:"p525"; }
-  li:nth-child(278) a::before { content:"p526"; }
-  li:nth-child(279) a::before { content:"p527"; }
-  li:nth-child(280) a::before { content:"p528"; }
-  li:nth-child(281) a::before { content:"p529"; }
-  li:nth-child(282) a::before { content:"p530"; }
-  li:nth-child(283) a::before { content:"p531"; }
-  li:nth-child(284) a::before { content:"p532"; }
-  li:nth-child(285) a::before { content:"p533"; }
-  li:nth-child(286) a::before { content:"p534"; }
-  li:nth-child(287) a::before { content:"p535"; }
-  li:nth-child(288) a::before { content:"p536"; }
-  li:nth-child(289) a::before { content:"p537"; }
-  li:nth-child(290) a::before { content:"p538"; }
-  li:nth-child(291) a::before { content:"p539"; }
-  li:nth-child(292) a::before { content:"p540"; }
-  li:nth-child(293) a::before { content:"p541"; }
-  li:nth-child(294) a::before { content:"p542"; }
-  li:nth-child(295) a::before { content:"p543"; }
-  li:nth-child(296) a::before { content:"p544"; }
-  li:nth-child(297) a::before { content:"p545"; }
-  li:nth-child(298) a::before { content:"p546"; }
-  li:nth-child(299) a::before { content:"p547"; }
-  li:nth-child(300) a::before { content:"p548"; }
-  li:nth-child(301) a::before { content:"p549"; }
-  li:nth-child(302) a::before { content:"p550"; }
-  li:nth-child(303) a::before { content:"p551"; }
-  li:nth-child(304) a::before { content:"p552"; }
-  li:nth-child(305) a::before { content:"p553"; }
-  li:nth-child(306) a::before { content:"p554"; }
-  li:nth-child(307) a::before { content:"p555"; }
-  li:nth-child(308) a::before { content:"p556"; }
-  li:nth-child(309) a::before { content:"p557"; }
-  li:nth-child(310) a::before { content:"p558"; }
-  li:nth-child(311) a::before { content:"p559"; }
-  li:nth-child(312) a::before { content:"p560"; }
-  li:nth-child(313) a::before { content:"p561"; }
-  li:nth-child(314) a::before { content:"p562"; }
-  li:nth-child(315) a::before { content:"p563"; }
-  li:nth-child(316) a::before { content:"p564"; }
-  li:nth-child(317) a::before { content:"p565"; }
-  li:nth-child(318) a::before { content:"p566"; }
-  li:nth-child(319) a::before { content:"p567"; }
-  li:nth-child(320) a::before { content:"p568"; }
-  li:nth-child(321) a::before { content:"p569"; }
-  li:nth-child(322) a::before { content:"p570"; }
-  li:nth-child(323) a::before { content:"p571"; }
-  li:nth-child(324) a::before { content:"p572"; }
-  li:nth-child(325) a::before { content:"p573"; }
-  li:nth-child(326) a::before { content:"p574"; }
-  li:nth-child(327) a::before { content:"p575"; }
-  li:nth-child(328) a::before { content:"p576"; }
-  li:nth-child(329) a::before { content:"p577"; }
-  li:nth-child(330) a::before { content:"p578"; }
-  li:nth-child(331) a::before { content:"p579"; }
-  li:nth-child(332) a::before { content:"p580"; }
-  li:nth-child(333) a::before { content:"p581"; }
-  li:nth-child(334) a::before { content:"p582"; }
-  li:nth-child(335) a::before { content:"p583"; }
-  li:nth-child(336) a::before { content:"p584"; }
-  li:nth-child(337) a::before { content:"p585"; }
-  li:nth-child(338) a::before { content:"p587"; }
-  li:nth-child(339) a::before { content:"p588"; }
-  li:nth-child(340) a::before { content:"p589"; }
-  li:nth-child(341) a::before { content:"p590"; }
-  li:nth-child(342) a::before { content:"p591"; }
-  li:nth-child(343) a::before { content:"p592"; }
-  li:nth-child(344) a::before { content:"p593"; }
-  li:nth-child(345) a::before { content:"p594"; }
-  li:nth-child(346) a::before { content:"p595"; }
-  li:nth-child(347) a::before { content:"p596"; }
-  li:nth-child(348) a::before { content:"p597"; }
-  li:nth-child(349) a::before { content:"p598"; }
-  li:nth-child(350) a::before { content:"p599"; }
-  li:nth-child(351) a::before { content:"p600"; }
-  li:nth-child(352) a::before { content:"p601"; }
-  li:nth-child(353) a::before { content:"p602"; }
-  li:nth-child(354) a::before { content:"p603"; }
-  li:nth-child(355) a::before { content:"p604"; }
-  li:nth-child(356) a::before { content:"p605"; }
-  li:nth-child(357) a::before { content:"p606"; }
-  li:nth-child(358) a::before { content:"p607"; }
-  li:nth-child(359) a::before { content:"p608"; }
-  li:nth-child(360) a::before { content:"p609"; }
-  li:nth-child(361) a::before { content:"p610"; }
-  li:nth-child(362) a::before { content:"p611"; }
-  li:nth-child(363) a::before { content:"p612"; }
-  li:nth-child(364) a::before { content:"p613"; }
-  li:nth-child(365) a::before { content:"p614"; }
-  li:nth-child(366) a::before { content:"p615"; }
-  li:nth-child(367) a::before { content:"p616"; }
-  li:nth-child(368) a::before { content:"p617"; }
-  li:nth-child(369) a::before { content:"p618"; }
-  li:nth-child(370) a::before { content:"p619"; }
-  li:nth-child(371) a::before { content:"p620"; }
-  li:nth-child(372) a::before { content:"p621"; }
-  li:nth-child(373) a::before { content:"p622"; }
-  li:nth-child(374) a::before { content:"p623"; }
-  li:nth-child(375) a::before { content:"p624"; }
-  li:nth-child(376) a::before { content:"p625"; }
-  li:nth-child(377) a::before { content:"p626"; }
-  li:nth-child(378) a::before { content:"p627"; }
-  li:nth-child(379) a::before { content:"p628"; }
-  li:nth-child(380) a::before { content:"p629"; }
-  li:nth-child(381) a::before { content:"p630"; }
-  li:nth-child(382) a::before { content:"p631"; }
-  li:nth-child(383) a::before { content:"p632"; }
-  li:nth-child(384) a::before { content:"p633"; }
-  li:nth-child(385) a::before { content:"p634"; }
-  li:nth-child(386) a::before { content:"p635"; }
-  li:nth-child(387) a::before { content:"p636"; }
-  li:nth-child(388) a::before { content:"p637"; }
-  li:nth-child(389) a::before { content:"p639"; }
-  li:nth-child(390) a::before { content:"p640"; }
-  li:nth-child(391) a::before { content:"p641"; }
-  li:nth-child(392) a::before { content:"p642"; }
-  li:nth-child(393) a::before { content:"p643"; }
-  li:nth-child(394) a::before { content:"p644"; }
-  li:nth-child(395) a::before { content:"p645"; }
-  li:nth-child(396) a::before { content:"p646"; }
-  li:nth-child(397) a::before { content:"p647"; }
-  li:nth-child(398) a::before { content:"p648"; }
-  li:nth-child(399) a::before { content:"p649"; }
-  li:nth-child(400) a::before { content:"p650"; }
-  li:nth-child(401) a::before { content:"p651"; }
-  li:nth-child(402) a::before { content:"p652"; }
-  li:nth-child(403) a::before { content:"p653"; }
-  li:nth-child(404) a::before { content:"p654"; }
-  li:nth-child(405) a::before { content:"p655"; }
-  li:nth-child(406) a::before { content:"p656"; }
-  li:nth-child(407) a::before { content:"p657"; }
-  li:nth-child(408) a::before { content:"p658"; }
-  li:nth-child(409) a::before { content:"p659"; }
-  li:nth-child(410) a::before { content:"p660"; }
-  li:nth-child(411) a::before { content:"p661"; }
-  li:nth-child(412) a::before { content:"p662"; }
-  li:nth-child(413) a::before { content:"p663"; }
-  li:nth-child(414) a::before { content:"p664"; }
-  li:nth-child(415) a::before { content:"p665"; }
-  li:nth-child(416) a::before { content:"p666"; }
-  li:nth-child(417) a::before { content:"p667"; }
-  li:nth-child(418) a::before { content:"p668"; }
-  li:nth-child(419) a::before { content:"p669"; }
-  li:nth-child(420) a::before { content:"p670"; }
-  li:nth-child(421) a::before { content:"p671"; }
   a .en { margin-left:auto; color:var(--muted); font-size:0.8rem;
     font-family:-apple-system,"PingFang SC",sans-serif; }
   footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--rule);
@@ -455,9 +35,10 @@
 </head>
 <body>
 <div class="page">
-  <h1>第 9 章：构造器与垃圾回收 · 译文索引</h1>
-  <div class="subtitle">《Head First Java》p246–256 · 中文译文</div>
+  <h1>《Head First Java》译文索引</h1>
+  <div class="subtitle">第 9–18 章 · p245–671 · 中文译文</div>
   <ol>
+    <li><a href="p245-initializing-duck-state.html">初始化新 Duck 的状态：构造器 vs setter<span class="en">Initializing the state of a new Duck</span></a></li>
     <li><a href="p246-constructor-init-duck-state.html">用构造器初始化重要的 Duck 状态<span class="en">Using the constructor to initialize important Duck state</span></a></li>
     <li><a href="p247-no-arg-constructor.html">让 Duck 更容易创建：无参构造器<span class="en">Make it easy to make a Duck</span></a></li>
     <li><a href="p248-compiler-no-arg.html">编译器总会替你生成无参构造器吗？不！<span class="en">Doesn't the compiler always make a no-arg constructor?</span></a></li>
@@ -486,7 +67,7 @@
     <li><a href="p271-five-minute-mystery-2.html">谜题：五分钟推理（续）<span class="en">Five-Minute Mystery, part 2</span></a></li>
     <li><a href="p272-exercise-solutions.html">练习答案：垃圾回收器 &amp; 最受欢迎的对象<span class="en">Exercise Solutions</span></a></li>
     <li><a href="p273-mystery-answer.html">五分钟推理答案<span class="en">Five-Minute Mystery answer</span></a></li>
-    <li><a href="p275-numbers-matter.html">第 10 章开篇：数字很重要<span class="en">Numbers Matter</span></a></li>
+    <li class="skip"><a href="p275-numbers-matter.html">第 10 章开篇：数字很重要<span class="en">Numbers Matter</span></a></li>
     <li><a href="p276-math-methods.html">Math 方法：最接近全局方法的玩意儿<span class="en">Math methods</span></a></li>
     <li><a href="p277-static-vs-nonstatic.html">普通方法与静态方法的区别<span class="en">Regular vs static methods</span></a></li>
     <li><a href="p278-static-class-meaning.html">类里有静态方法意味着什么<span class="en">What it means to have a class with static methods</span></a></li>
@@ -579,7 +160,7 @@
     <li><a href="p365-reverse-engineer-solution.html">练习答案：逆向工程 lambda（来自 p343）<span class="en">Reverse Engineer solution</span></a></li>
     <li><a href="p366-lambda-treeset-solutions.html">练习答案：lambda 排序 + TreeSet 三问<span class="en">Sorting with lambdas &amp; TreeSet solutions</span></a></li>
     <li><a href="p367-be-the-compiler-solution.html">练习答案：来当编译器进阶版（来自 p363）<span class="en">Be the Compiler solution</span></a></li>
-    <li><a href="p369-lambdas-and-streams.html">第 12 章开篇：说"要什么"而非"怎么做"<span class="en">Lambdas and Streams: What, Not How</span></a></li>
+    <li class="skip"><a href="p369-lambdas-and-streams.html">第 12 章开篇：说"要什么"而非"怎么做"<span class="en">Lambdas and Streams: What, Not How</span></a></li>
     <li><a href="p370-tell-computer-what.html">告诉计算机你要什么（for 循环 vs forEach）<span class="en">Tell the computer WHAT you want</span></a></li>
     <li><a href="p371-fireside-for-vs-foreach.html">炉边闲谈：for 循环 vs forEach()<span class="en">Fireside Chats: for vs forEach</span></a></li>
     <li><a href="p372-when-for-loops-go-wrong.html">谜题：当 for 循环出错时（Mixed Messages）<span class="en">When for loops go wrong</span></a></li>
@@ -670,7 +251,7 @@
     <li><a href="p457-solutions-pencil-truefalse.html">答案：多态谜题（来自 p440）+ 真或假（来自 p454）<span class="en">Sharpen your pencil &amp; True or False solutions</span></a></li>
     <li><a href="p458-code-magnets-solution.html">练习答案：代码磁铁（来自 p455）<span class="en">Code Magnets solution</span></a></li>
     <li><a href="p459-javacross-solution.html">谜题答案：JavaCross（来自 p456）<span class="en">JavaCross solution</span></a></li>
-    <li><a href="p461-a-very-graphic-story.html">第 14 章开篇：一段非常"图形化"的故事<span class="en">A Very Graphic Story</span></a></li>
+    <li class="skip"><a href="p461-a-very-graphic-story.html">第 14 章开篇：一段非常"图形化"的故事<span class="en">A Very Graphic Story</span></a></li>
     <li><a href="p462-it-all-starts-with-a-window.html">一切都从一个窗口开始（JFrame 与控件）<span class="en">It all starts with a window</span></a></li>
     <li><a href="p463-first-gui-button-on-a-frame.html">你的第一个 GUI：frame 上的一个按钮<span class="en">Your first GUI: a button on a frame</span></a></li>
     <li><a href="p464-nothing-happens-when-i-click.html">但我点击它时什么也没发生 + 傻问题<span class="en">But nothing happens when I click it...</span></a></li>
@@ -795,7 +376,7 @@
     <li><a href="p583-code-magnets.html">代码磁贴：重构 DungeonGame<span class="en">Code Magnets</span></a></li>
     <li><a href="p584-exercise-solutions-true-or-false.html">练习解答：真还是假（来自第 582 页）<span class="en">Exercise Solutions: True or False</span></a></li>
     <li><a href="p585-code-magnets-solution.html">代码磁贴（来自第 583 页）<span class="en">Code Magnets</span></a></li>
-    <li><a href="p587-make-a-connection.html">第 17 章开篇：建立连接<span class="en">Make a Connection</span></a></li>
+    <li class="skip"><a href="p587-make-a-connection.html">第 17 章开篇：建立连接<span class="en">Make a Connection</span></a></li>
     <li><a href="p588-real-time-beatbox-chat.html">实时 BeatBox 聊天<span class="en">Real-time BeatBox chat</span></a></li>
     <li><a href="p589-chat-program-overview.html">聊天程序概览<span class="en">Chat program overview</span></a></li>
     <li><a href="p590-connecting-sending-receiving.html">连接、接收与发送<span class="en">Connecting, sending, and receiving</span></a></li>
@@ -846,7 +427,7 @@
     <li><a href="p635-code-magnets-continued.html">代码磁贴（续）<span class="en">Code Magnets, continued</span></a></li>
     <li><a href="p636-exercise-solutions-who-am-i.html">练习答案：我是谁？与代码磁贴<span class="en">Exercise Solutions: Who Am I?</span></a></li>
     <li><a href="p637-code-kitchen-samsampler.html">Code Kitchen：SamSampler 节拍<span class="en">Code Kitchen</span></a></li>
-    <li><a href="p639-dealing-with-concurrency-issues.html">第 18 章开篇：处理并发问题<span class="en">Dealing with Concurrency Issues</span></a></li>
+    <li class="skip"><a href="p639-dealing-with-concurrency-issues.html">第 18 章开篇：处理并发问题<span class="en">Dealing with Concurrency Issues</span></a></li>
     <li><a href="p640-what-could-possibly-go-wrong.html">会出什么岔子？（并发三大问题）<span class="en">What could possibly go wrong?</span></a></li>
     <li><a href="p641-marriage-in-trouble.html">一段婚姻的危机（Ryan 与 Monica）<span class="en">Marriage in Trouble</span></a></li>
     <li><a href="p642-ryan-and-monica-problem.html">Ryan 和 Monica 的问题，用代码表示<span class="en">The Ryan and Monica problem, in code</span></a></li>
