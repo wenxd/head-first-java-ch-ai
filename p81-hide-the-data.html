@@ -219,7 +219,44 @@
     <p style="font-size:0.92rem;"><strong>HeadFirst：</strong>可有时我看到的 setter 就是直接赋值，什么都不检查。如果某个实例变量本来就没有边界，这种 setter 不是白白增加开销、拖慢性能吗？</p>
     <p style="font-size:0.92rem;margin-bottom:0;"><strong>Object：</strong>setter（getter 也一样）的意义在于：<strong>你以后可以改主意，而不会弄坏别人的代码！</strong>想象一下，公司里一半人用了你那个「实例变量全 public」的类，某天你突然发现「糟糕，这个值我漏考虑了一种情况，得改成 setter」——你让所有人的代码都崩了。封装的妙处就是：你可以改主意，而且没人受伤。直接访问变量带来的性能收益微乎其微，几乎从来不值得。</p>
   </div>
-  <footer>
+  <style>
+  /* 翻页导航（自动生成，勿手改） */
+  .hfj-nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:flex-end;
+    margin:2.4rem 0 1rem; padding-top:1rem; border-top:1px dashed #ddd3c2;
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; }
+  .hfj-nav a, .hfj-nav .off { display:inline-flex; align-items:center; justify-content:center;
+    min-height:2.2rem; padding:0 .95rem; border-radius:999px; border:1px solid #ddd3c2;
+    background:#f2ede2; color:#2b2620; font-size:.8rem; text-decoration:none; white-space:nowrap;
+    transition:background .15s ease,border-color .15s ease,color .15s ease; }
+  .hfj-nav a:hover { background:#b3541e; border-color:#b3541e; color:#fff; }
+  .hfj-nav .home { font-weight:700; background:#faf7f0; }
+  .hfj-nav .off { opacity:.38; }
+  @media (max-width:560px) {
+    .hfj-nav { justify-content:stretch; }
+    .hfj-nav a, .hfj-nav .off { flex:1; padding:0 .4rem; font-size:.78rem; }
+  }
+  @media print { .hfj-nav { display:none; } }
+</style>
+<nav class="hfj-nav" aria-label="翻页">
+  <a class="prev" href="p80-encapsulation.html" title="上一页 · p80 封装">← p80</a>
+  <a class="home" href="index.html" title="返回目录（键盘 ← → 也可翻页）">目录</a>
+  <a class="next" href="p82-encapsulating-gooddog.html" title="下一页 · p82 封装 GoodDog">p82 →</a>
+</nav>
+<script>
+(function () {
+  var prev = document.querySelector('.hfj-nav .prev'),
+      next = document.querySelector('.hfj-nav .next');
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target && e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.target && e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+    if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+  });
+})();
+</script>
+<footer>
     <span>译自《Head First Java》第 4 章 · 仅供学习交流</span>
     <span>you are here ▶ 81</span>
   </footer>

@@ -222,7 +222,44 @@
     <div class="q">在我以前用的语言里，可以对整数做布尔测试。Java 里我能写 <code>int x = 1; while (x) { }</code> 吗？</div>
     <div class="a">不能。Java 里 boolean 和整数是不相容的类型。既然条件测试的结果必须是 boolean，那唯一能直接测试（不用比较运算符）的变量类型就是 boolean。比如 <code>boolean isHot = true; while (isHot) { }</code> 是合法的。</div>
   </div>
-  <footer>
+  <style>
+  /* 翻页导航（自动生成，勿手改） */
+  .hfj-nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:flex-end;
+    margin:2.4rem 0 1rem; padding-top:1rem; border-top:1px dashed #ddd3c2;
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; }
+  .hfj-nav a, .hfj-nav .off { display:inline-flex; align-items:center; justify-content:center;
+    min-height:2.2rem; padding:0 .95rem; border-radius:999px; border:1px solid #ddd3c2;
+    background:#f2ede2; color:#2b2620; font-size:.8rem; text-decoration:none; white-space:nowrap;
+    transition:background .15s ease,border-color .15s ease,color .15s ease; }
+  .hfj-nav a:hover { background:#b3541e; border-color:#b3541e; color:#fff; }
+  .hfj-nav .home { font-weight:700; background:#faf7f0; }
+  .hfj-nav .off { opacity:.38; }
+  @media (max-width:560px) {
+    .hfj-nav { justify-content:stretch; }
+    .hfj-nav a, .hfj-nav .off { flex:1; padding:0 .4rem; font-size:.78rem; }
+  }
+  @media print { .hfj-nav { display:none; } }
+</style>
+<nav class="hfj-nav" aria-label="翻页">
+  <a class="prev" href="p13-while-and-boolean-tests.html" title="上一页 · p13 循环与布尔测试">← p13</a>
+  <a class="home" href="index.html" title="返回目录（键盘 ← → 也可翻页）">目录</a>
+  <a class="next" href="p15-if-else-branching.html" title="下一页 · p15 条件分支 if/else">p15 →</a>
+</nav>
+<script>
+(function () {
+  var prev = document.querySelector('.hfj-nav .prev'),
+      next = document.querySelector('.hfj-nav .next');
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target && e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.target && e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+    if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+  });
+})();
+</script>
+<footer>
     <span>译自《Head First Java》第 1 章 · 仅供学习交流</span>
     <span>you are here ▶ 14</span>
   </footer>

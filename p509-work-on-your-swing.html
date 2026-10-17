@@ -49,7 +49,44 @@
 
   <p style="margin-top:1.8rem;"><strong>Swing 很简单。</strong>——除非你真的<em>在乎</em>东西最后落在屏幕上的什么地方。Swing 代码<em>看起来</em>很简单，但你一编译、一运行、一看，然后就想："嘿，那玩意儿不该在那儿啊。"让东西容易<em>编写</em>的东西，正是让它难以<em>控制</em>的东西——那就是<strong>布局管理器（Layout Manager）</strong>。布局管理器对象控制着 Java GUI 里控件的尺寸和位置。它们替你干了一大堆活，但你不会总是喜欢结果。你想让两个按钮一样大，但它们不一样。你想让文本字段宽 3 英寸，它却宽 9 英寸。还有一个在标签<em>下面</em>，而不是在它旁边。但花点小功夫，你就能让布局管理器听你的话。学一点 Swing，会给你未来做的大多数 GUI 编程一个领先起步。想写 Android 应用？做完这一章也会让你领先一步。</p>
 
-  <footer>
+  <style>
+  /* 翻页导航（自动生成，勿手改） */
+  .hfj-nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:flex-end;
+    margin:2.4rem 0 1rem; padding-top:1rem; border-top:1px dashed #ddd3c2;
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; }
+  .hfj-nav a, .hfj-nav .off { display:inline-flex; align-items:center; justify-content:center;
+    min-height:2.2rem; padding:0 .95rem; border-radius:999px; border:1px solid #ddd3c2;
+    background:#f2ede2; color:#2b2620; font-size:.8rem; text-decoration:none; white-space:nowrap;
+    transition:background .15s ease,border-color .15s ease,color .15s ease; }
+  .hfj-nav a:hover { background:#b3541e; border-color:#b3541e; color:#fff; }
+  .hfj-nav .home { font-weight:700; background:#faf7f0; }
+  .hfj-nav .off { opacity:.38; }
+  @media (max-width:560px) {
+    .hfj-nav { justify-content:stretch; }
+    .hfj-nav a, .hfj-nav .off { flex:1; padding:0 .4rem; font-size:.78rem; }
+  }
+  @media print { .hfj-nav { display:none; } }
+</style>
+<nav class="hfj-nav" aria-label="翻页">
+  <a class="prev" href="p508-pool-puzzle-solution.html" title="上一页 · p508 Pool Puzzle（来自 p506）">← p508</a>
+  <a class="home" href="index.html" title="返回目录（键盘 ← → 也可翻页）">目录</a>
+  <a class="next" href="p510-swing-components.html" title="下一页 · p510 Swing 控件">p510 →</a>
+</nav>
+<script>
+(function () {
+  var prev = document.querySelector('.hfj-nav .prev'),
+      next = document.querySelector('.hfj-nav .next');
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target && e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.target && e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+    if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+  });
+})();
+</script>
+<footer>
     <span>译自《Head First Java》第 15 章 · 仅供学习交流</span>
     <span>this is a new chapter ▶ 509</span>
   </footer>

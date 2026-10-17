@@ -183,7 +183,44 @@
   <div class="keyrule">先停下来想一想：如果让你来改，你会怎么给"部分 Animal"加上宠物行为？<br><span style="font-weight:400;font-size:0.95rem">下一页开始揭晓答案——现在先别翻。</span></div>
 
   <p class="hand-note">（翻过去，这道练习就彻底没意义了，你也就失去了燃烧脑卡路里的唯一大好机会。）</p>
-  <footer>
+  <style>
+  /* 翻页导航（自动生成，勿手改） */
+  .hfj-nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:flex-end;
+    margin:2.4rem 0 1rem; padding-top:1rem; border-top:1px dashed #ddd3c2;
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; }
+  .hfj-nav a, .hfj-nav .off { display:inline-flex; align-items:center; justify-content:center;
+    min-height:2.2rem; padding:0 .95rem; border-radius:999px; border:1px solid #ddd3c2;
+    background:#f2ede2; color:#2b2620; font-size:.8rem; text-decoration:none; white-space:nowrap;
+    transition:background .15s ease,border-color .15s ease,color .15s ease; }
+  .hfj-nav a:hover { background:#b3541e; border-color:#b3541e; color:#fff; }
+  .hfj-nav .home { font-weight:700; background:#faf7f0; }
+  .hfj-nav .off { opacity:.38; }
+  @media (max-width:560px) {
+    .hfj-nav { justify-content:stretch; }
+    .hfj-nav a, .hfj-nav .off { flex:1; padding:0 .4rem; font-size:.78rem; }
+  }
+  @media print { .hfj-nav { display:none; } }
+</style>
+<nav class="hfj-nav" aria-label="翻页">
+  <a class="prev" href="p219-contracts.html" title="上一页 · p219 公开方法就是你的契约">← p219</a>
+  <a class="home" href="index.html" title="返回目录（键盘 ← → 也可翻页）">目录</a>
+  <a class="next" href="p221-option-one.html" title="下一页 · p221 方案一：把宠物方法塞进 Animal">p221 →</a>
+</nav>
+<script>
+(function () {
+  var prev = document.querySelector('.hfj-nav .prev'),
+      next = document.querySelector('.hfj-nav .next');
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target && e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.target && e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+    if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+  });
+})();
+</script>
+<footer>
     <span>译自《Head First Java》第 8 章 · 仅供学习交流</span>
     <span>you are here ▶ 220</span>
   </footer>

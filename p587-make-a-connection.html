@@ -45,7 +45,44 @@
 
   <p><strong>与外面的世界连接。</strong>你的 Java 程序可以和另一台机器上的程序对话。这很容易。所有底层的网络细节都由 Java 内置的库替你处理好了。Java 的一大好处就是：通过网络收发数据，可以只是一种 I/O，只不过在 I/O 链的末端接上了一个略显不同的"连接"。在这一章里，我们要用 <em class="term">channel（通道）</em>去连接外面的世界。我们会做<em>客户端通道</em>，也会做<em>服务端通道</em>。我们会做<em>客户端</em>和<em>服务端</em>，并让它们互相说话。而且我们还得学会如何同时做不止一件事。等这一章结束的时候，你会拥有一个功能完整、支持多线程的聊天客户端。我们刚才是说了<em>多线程</em>吗？没错，你将学会那个秘诀——如何在和 Bob 说话的同时，还在听着 Suzy 说话。</p>
 
-  <footer>
+  <style>
+  /* 翻页导航（自动生成，勿手改） */
+  .hfj-nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:flex-end;
+    margin:2.4rem 0 1rem; padding-top:1rem; border-top:1px dashed #ddd3c2;
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; }
+  .hfj-nav a, .hfj-nav .off { display:inline-flex; align-items:center; justify-content:center;
+    min-height:2.2rem; padding:0 .95rem; border-radius:999px; border:1px solid #ddd3c2;
+    background:#f2ede2; color:#2b2620; font-size:.8rem; text-decoration:none; white-space:nowrap;
+    transition:background .15s ease,border-color .15s ease,color .15s ease; }
+  .hfj-nav a:hover { background:#b3541e; border-color:#b3541e; color:#fff; }
+  .hfj-nav .home { font-weight:700; background:#faf7f0; }
+  .hfj-nav .off { opacity:.38; }
+  @media (max-width:560px) {
+    .hfj-nav { justify-content:stretch; }
+    .hfj-nav a, .hfj-nav .off { flex:1; padding:0 .4rem; font-size:.78rem; }
+  }
+  @media print { .hfj-nav { display:none; } }
+</style>
+<nav class="hfj-nav" aria-label="翻页">
+  <a class="prev" href="p585-code-magnets-solution.html" title="上一页 · p585 代码磁贴（来自第 583 页）">← p585</a>
+  <a class="home" href="index.html" title="返回目录（键盘 ← → 也可翻页）">目录</a>
+  <a class="next" href="p588-real-time-beatbox-chat.html" title="下一页 · p588 实时 BeatBox 聊天">p588 →</a>
+</nav>
+<script>
+(function () {
+  var prev = document.querySelector('.hfj-nav .prev'),
+      next = document.querySelector('.hfj-nav .next');
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target && e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.target && e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+    if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+  });
+})();
+</script>
+<footer>
     <span>译自《Head First Java》第 17 章 · 仅供学习交流</span>
     <span>this is a new chapter ▶ 587</span>
   </footer>

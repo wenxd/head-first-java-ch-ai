@@ -84,7 +84,44 @@
     <p class="a">因为……你办不到。至少本书涵盖的这些 Java 版本里不行（语言在不断进化，以后可能会变）。记住泛型类型的规则：你只能指定<em>类</em>或<em>接口</em>类型，不能指定基本类型。所以 <code>ArrayList&lt;int&gt;</code> 编译不过。但从上面的代码也能看出，这其实无关紧要——编译器允许你把 int 放进 <code>ArrayList&lt;Integer&gt;</code>。事实上，由于自动装箱会自动发生，你根本无法阻止自己把基本类型放进"其类型是那个基本类型包装类"的 ArrayList。所以，你可以把 boolean 基本类型放进 <code>ArrayList&lt;Boolean&gt;</code>，把 char 放进 <code>ArrayList&lt;Character&gt;</code>。</p>
   </div>
 
-  <footer>
+  <style>
+  /* 翻页导航（自动生成，勿手改） */
+  .hfj-nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:flex-end;
+    margin:2.4rem 0 1rem; padding-top:1rem; border-top:1px dashed #ddd3c2;
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; }
+  .hfj-nav a, .hfj-nav .off { display:inline-flex; align-items:center; justify-content:center;
+    min-height:2.2rem; padding:0 .95rem; border-radius:999px; border:1px solid #ddd3c2;
+    background:#f2ede2; color:#2b2620; font-size:.8rem; text-decoration:none; white-space:nowrap;
+    transition:background .15s ease,border-color .15s ease,color .15s ease; }
+  .hfj-nav a:hover { background:#b3541e; border-color:#b3541e; color:#fff; }
+  .hfj-nav .home { font-weight:700; background:#faf7f0; }
+  .hfj-nav .off { opacity:.38; }
+  @media (max-width:560px) {
+    .hfj-nav { justify-content:stretch; }
+    .hfj-nav a, .hfj-nav .off { flex:1; padding:0 .4rem; font-size:.78rem; }
+  }
+  @media print { .hfj-nav { display:none; } }
+</style>
+<nav class="hfj-nav" aria-label="翻页">
+  <a class="prev" href="p290-wrapping-a-primitive.html" title="上一页 · p290 把一个基本类型"包装"起来">← p290</a>
+  <a class="home" href="index.html" title="返回目录（键盘 ← → 也可翻页）">目录</a>
+  <a class="next" href="p292-autoboxing-everywhere.html" title="下一页 · p292 自动装箱在几乎所有地方都管用">p292 →</a>
+</nav>
+<script>
+(function () {
+  var prev = document.querySelector('.hfj-nav .prev'),
+      next = document.querySelector('.hfj-nav .next');
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target && e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.target && e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+    if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+  });
+})();
+</script>
+<footer>
     <span>译自《Head First Java》第 10 章 · 仅供学习交流</span>
     <span>you are here ▶ 291</span>
   </footer>

@@ -49,7 +49,44 @@
 
   <p style="margin-top:2rem;"><strong>事情总会出岔子。文件不在了。服务器宕机了。</strong>无论你是个多好的程序员，你都不可能掌控一切。事情可能出岔子。<em>非常</em>严重的岔子。当你写下一个有风险的方法时，你就需要代码来处理可能发生的不好的事情。但你怎么<em>知道</em>一个方法有风险？又该把处理这种<strong>例外</strong>（exceptional）情况的代码放在哪？到目前为止，本书里我们还没<em>真的</em>冒过什么风险。我们确实遇到过运行时的错误，但那些问题主要都是我们自己代码里的缺陷——bug。而那些东西我们应该在开发阶段就修好。不，我们这里说的"处理问题的代码"，是针对那些你<em>无法</em>保证在运行时一定能正常工作的代码。是那些"假定文件在正确的目录里、服务器正在运行、或者线程保持休眠"的代码。而且我们得<em>现在</em>就做这件事。因为<em>这一章</em>，我们要去造一个用到有风险的 JavaSound API 的东西。我们要造一个 MIDI 音乐播放器。</p>
 
-  <footer>
+  <style>
+  /* 翻页导航（自动生成，勿手改） */
+  .hfj-nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:flex-end;
+    margin:2.4rem 0 1rem; padding-top:1rem; border-top:1px dashed #ddd3c2;
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; }
+  .hfj-nav a, .hfj-nav .off { display:inline-flex; align-items:center; justify-content:center;
+    min-height:2.2rem; padding:0 .95rem; border-radius:999px; border:1px solid #ddd3c2;
+    background:#f2ede2; color:#2b2620; font-size:.8rem; text-decoration:none; white-space:nowrap;
+    transition:background .15s ease,border-color .15s ease,color .15s ease; }
+  .hfj-nav a:hover { background:#b3541e; border-color:#b3541e; color:#fff; }
+  .hfj-nav .home { font-weight:700; background:#faf7f0; }
+  .hfj-nav .off { opacity:.38; }
+  @media (max-width:560px) {
+    .hfj-nav { justify-content:stretch; }
+    .hfj-nav a, .hfj-nav .off { flex:1; padding:0 .4rem; font-size:.78rem; }
+  }
+  @media print { .hfj-nav { display:none; } }
+</style>
+<nav class="hfj-nav" aria-label="翻页">
+  <a class="prev" href="p420-pool-puzzle-solution.html" title="上一页 · p420 池塘拼图（来自 p416）">← p420</a>
+  <a class="home" href="index.html" title="返回目录（键盘 ← → 也可翻页）">目录</a>
+  <a class="next" href="p422-lets-make-a-music-machine.html" title="下一页 · p422 来造一台音乐机器">p422 →</a>
+</nav>
+<script>
+(function () {
+  var prev = document.querySelector('.hfj-nav .prev'),
+      next = document.querySelector('.hfj-nav .next');
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target && e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.target && e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+    if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+  });
+})();
+</script>
+<footer>
     <span>译自《Head First Java》第 13 章 · 仅供学习交流</span>
     <span>this is a new chapter ▶ 421</span>
   </footer>

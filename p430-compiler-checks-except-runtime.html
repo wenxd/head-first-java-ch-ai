@@ -94,7 +94,44 @@
     <div class="a">大多数 RuntimeException 都源自你代码逻辑里的一个问题，而不是一个以无法预测或无法避免的方式在运行时失败的条件。你无法保证文件一定存在。你无法保证服务器一定启动。但<em>你</em>能确保自己的代码不会越界访问数组末尾（<code>.length</code> 属性就是干这个的）。你<em>希望</em> RuntimeException 在开发和测试阶段就出现。你不希望为了 catch 一个原本就不该发生的东西，而在代码里到处写 try/catch——那样会带来额外开销。try/catch 是用来处理"例外情况"的，不是处理你代码里缺陷的。用你的 catch 块去尝试从"你无法保证一定成功"的情况中恢复。至少，也要给用户打印一条消息和栈轨迹，好让别人能搞清楚发生了什么。</div>
   </div>
 
-  <footer>
+  <style>
+  /* 翻页导航（自动生成，勿手改） */
+  .hfj-nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:flex-end;
+    margin:2.4rem 0 1rem; padding-top:1rem; border-top:1px dashed #ddd3c2;
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; }
+  .hfj-nav a, .hfj-nav .off { display:inline-flex; align-items:center; justify-content:center;
+    min-height:2.2rem; padding:0 .95rem; border-radius:999px; border:1px solid #ddd3c2;
+    background:#f2ede2; color:#2b2620; font-size:.8rem; text-decoration:none; white-space:nowrap;
+    transition:background .15s ease,border-color .15s ease,color .15s ease; }
+  .hfj-nav a:hover { background:#b3541e; border-color:#b3541e; color:#fff; }
+  .hfj-nav .home { font-weight:700; background:#faf7f0; }
+  .hfj-nav .off { opacity:.38; }
+  @media (max-width:560px) {
+    .hfj-nav { justify-content:stretch; }
+    .hfj-nav a, .hfj-nav .off { flex:1; padding:0 .4rem; font-size:.78rem; }
+  }
+  @media print { .hfj-nav { display:none; } }
+</style>
+<nav class="hfj-nav" aria-label="翻页">
+  <a class="prev" href="p429-whose-code-throws-it.html" title="上一页 · p429 如果是你的代码 catch 异常，那又是谁的代码 throw 它？">← p429</a>
+  <a class="home" href="index.html" title="返回目录（键盘 ← → 也可翻页）">目录</a>
+  <a class="next" href="p431-bullet-points-exception.html" title="下一页 · p431 ">p431 →</a>
+</nav>
+<script>
+(function () {
+  var prev = document.querySelector('.hfj-nav .prev'),
+      next = document.querySelector('.hfj-nav .next');
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target && e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.target && e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+    if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+  });
+})();
+</script>
+<footer>
     <span>译自《Head First Java》第 13 章 · 仅供学习交流</span>
     <span>you are here ▶ 430</span>
   </footer>
