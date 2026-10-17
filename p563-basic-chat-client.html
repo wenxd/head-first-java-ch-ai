@@ -51,7 +51,7 @@
             PrintWriter writer = <span class="kw">new</span> <span class="fn">PrintWriter</span>(sock.<span class="fn">getOutputStream</span>());
             writer.<span class="fn">println</span>(<span class="str">"test message"</span>);   <span class="cm">// 把一行文字写到流里</span>
             writer.<span class="fn">close</span>();
-            <span class="cm">// 注意：还得去读回服务器消息，第 17 章后段会看到用线程的方式。</span>
+            <span class="cm">// 注意：还得去读回服务器消息，第 16 章后段会看到用线程的方式。</span>
         } <span class="kw">catch</span> (IOException ex) {
             ex.<span class="fn">printStackTrace</span>();
         }
@@ -63,7 +63,7 @@
   <p>那为什么还需要线程？因为客户端得同时"既能打字发送、又能持续监听从服务器进来的消息"。这个双工需要并发——于是线程登场。</p>
 
   <footer>
-    <span>译自《Head First Java》第 17 章 · 仅供学习交流</span>
+    <span>译自《Head First Java》第 16 章 · 仅供学习交流</span>
     <span>you are here ▶ 563</span>
   </footer>
 
