@@ -1,0 +1,323 @@
+<!-- Generated for the Head First Java Chinese translation -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 3 版致谢 — Head First Java 译文 F27</title>
+<style>
+  :root {
+    --bg:#faf7f0; --bg2:#f2ede2; --ink:#2b2620; --muted:#7a7166;
+    --rule:#ddd3c2; --accent:#b3541e; --accent2:#2f5d50;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,serif;
+    font-size:16px; line-height:1.85; }
+  .page { max-width:880px; margin:0 auto; padding:3rem 1.5rem 4rem; }
+  .kicker { text-align:right; font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.85rem; letter-spacing:0.12em; color:var(--muted); margin-bottom:0.5rem; }
+  h1 { font-size:2rem; line-height:1.28; margin:0 0 0.3rem; font-weight:800; }
+  .subtitle { color:var(--muted); font-size:0.95rem; margin-bottom:2rem; }
+  h2 { font-size:1.12rem; margin:2rem 0 0.6rem; color:var(--accent2); }
+  h3 { font-size:1rem; margin:1.5rem 0 0.4rem; color:var(--accent2); }
+  p { margin:0.9rem 0; }
+  strong { color:var(--accent); font-weight:700; }
+  em.term { font-style:normal; color:var(--accent2); font-weight:600; }
+
+  /* 封面 */
+  .cover { max-width:540px; margin:1.6rem auto 2rem; background:#164a3f;
+    color:#f7f0df; border-radius:4px; padding:0; overflow:hidden;
+    box-shadow:10px 12px 0 rgba(43,38,32,0.16); border:1px solid #0c241f; }
+  .cover .band { background:#e8b64c; color:#20201c; text-align:center;
+    font-family:-apple-system,"PingFang SC",sans-serif; font-size:0.78rem;
+    letter-spacing:0.24em; padding:0.5rem 0.5rem; font-weight:700; }
+  .cover .band span { display:block; font-size:0.62rem; letter-spacing:0.16em;
+    font-weight:400; margin-top:0.15rem; opacity:0.75; }
+  .cover .inner { padding:2.6rem 2.2rem 2rem; text-align:center; }
+  .cover .series { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.72rem; letter-spacing:0.3em; color:#a9c8bd; margin-bottom:0.6rem; }
+  .cover .big { font-family:Georgia,"Times New Roman",serif; font-size:5.4rem;
+    line-height:0.95; font-weight:800; letter-spacing:-0.02em; color:#f7f0df; }
+  .cover .ed { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.92rem; letter-spacing:0.34em; color:#e8b64c; margin-top:0.5rem; }
+  .cover .desc { margin:1.3rem auto 0; max-width:20rem; font-size:1.02rem;
+    line-height:1.7; color:#e6ded0; }
+  .cover .desc small { display:block; font-size:0.76rem; letter-spacing:0.08em;
+    color:#9fbcb1; margin-top:0.3rem; font-family:-apple-system,"PingFang SC",sans-serif; }
+  .cover .rule { width:3rem; height:2px; background:#e8b64c; margin:1.4rem auto; }
+  .cover .who { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.9rem; letter-spacing:0.05em; color:#f7f0df; line-height:1.9; }
+  .cover .who b { color:#e8b64c; font-weight:600; }
+  .cover .foot { background:#0f332b; color:#9fbcb1; text-align:center;
+    font-family:-apple-system,"PingFang SC",sans-serif; font-size:0.68rem;
+    letter-spacing:0.2em; padding:0.55rem; }
+
+  /* 书单 */
+  .series-list { list-style:none; padding:0; margin:1.6rem 0;
+    display:grid; grid-template-columns:1fr 1fr; gap:0.55rem; }
+  @media (max-width:680px) { .series-list { grid-template-columns:1fr; } }
+  .series-list li { background:var(--bg2); border:1px solid var(--rule);
+    border-radius:8px; padding:0.55rem 0.9rem; font-size:0.92rem; }
+  .series-list li .en { display:block; font-size:0.72rem; color:var(--muted);
+    font-family:-apple-system,"PingFang SC",sans-serif; letter-spacing:0.02em; }
+
+  /* 赞誉 */
+  .quote { margin:1.2rem 0; padding:1rem 1.3rem 0.9rem; background:#fffdf8;
+    border:1px solid var(--rule); border-left:4px solid var(--accent2);
+    border-radius:0 10px 10px 0; }
+  .quote p { margin:0 0 0.5rem; font-size:0.95rem; }
+  .quote .by { font-size:0.83rem; color:var(--muted); text-align:right;
+    font-family:-apple-system,"PingFang SC",sans-serif; line-height:1.6; }
+  .quote .by b { color:var(--accent); font-weight:700; }
+
+  /* 扉页 / 献词 */
+  .titlepage { text-align:center; padding:3rem 1rem 2rem; }
+  .titlepage .t1 { font-family:Georgia,serif; font-size:3rem; font-weight:800;
+    line-height:1.1; letter-spacing:-0.01em; }
+  .titlepage .t2 { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.85rem; letter-spacing:0.3em; color:var(--muted); margin-top:0.6rem; }
+  .dream-box { max-width:22rem; margin:2.4rem auto 0; border:2px solid var(--accent2);
+    border-radius:14px; padding:1.4rem 1.5rem; background:var(--bg2);
+    font-size:0.95rem; text-align:left; line-height:1.8; }
+  .dream-box .tag { display:block; font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.74rem; letter-spacing:0.16em; color:var(--accent2);
+    font-weight:700; margin-bottom:0.5rem; }
+  .dedication { text-align:center; padding:4rem 1rem; }
+  .dedication .item { margin:2.2rem 0; }
+  .dedication .who { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.78rem; letter-spacing:0.2em; color:var(--muted); margin-bottom:0.5rem; }
+  .dedication .line { font-size:1.15rem; line-height:2; }
+  .dedication .line small { display:block; font-size:0.9rem; color:var(--muted); }
+
+  /* 版权页 */
+  .imprint { font-size:0.86rem; line-height:1.8; color:#3d372f; }
+  .imprint p { margin:0.55rem 0; }
+  .imprint .hd { font-weight:700; color:var(--ink); margin-top:1.4rem;
+    font-family:-apple-system,"PingFang SC",sans-serif; font-size:0.82rem;
+    letter-spacing:0.08em; }
+  .imprint .meta { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.8rem; color:var(--muted); }
+  .imprint .legal { font-size:0.78rem; color:var(--muted); line-height:1.75; }
+  .isbn { display:inline-block; margin-top:1.2rem; border:1px solid var(--rule);
+    border-radius:6px; padding:0.3rem 0.7rem; font-family:"SF Mono",Menlo,monospace;
+    font-size:0.8rem; background:var(--bg2); }
+
+  /* 作者 */
+  .author { display:grid; grid-template-columns:5.4rem 1fr; gap:1.4rem;
+    margin:2rem 0; align-items:start; }
+  @media (max-width:620px) { .author { grid-template-columns:1fr; } }
+  .author .ava { width:5.4rem; height:5.4rem; border-radius:50%;
+    background:var(--bg2); border:2px solid var(--rule); display:flex;
+    align-items:center; justify-content:center; font-size:2.1rem;
+    font-family:Georgia,serif; color:var(--accent2); font-weight:700; }
+  .author h3 { margin:0 0 0.1rem; font-size:1.15rem; color:var(--ink); }
+  .author .role { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.76rem; letter-spacing:0.12em; color:var(--accent);
+    margin-bottom:0.7rem; }
+  .author p { margin:0.6rem 0; font-size:0.94rem; }
+  .author .contact { font-size:0.84rem; color:var(--muted);
+    font-family:-apple-system,"PingFang SC",sans-serif; }
+
+  /* 目录 */
+  .toc-sum { width:100%; border-collapse:collapse; margin:1.4rem 0; font-size:0.92rem; }
+  .toc-sum th, .toc-sum td { border-bottom:1px solid var(--rule);
+    padding:0.5rem 0.5rem; text-align:left; vertical-align:top; }
+  .toc-sum th { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.76rem; letter-spacing:0.1em; color:var(--muted); font-weight:600; }
+  .toc-sum td.no { width:2.2rem; color:var(--accent); font-weight:700;
+    font-family:-apple-system,"PingFang SC",sans-serif; }
+  .toc-sum td.pg { width:3rem; text-align:right; color:var(--muted);
+    font-family:"SF Mono",Menlo,monospace; font-size:0.82rem; }
+  .toc-sum td .en { display:block; font-size:0.76rem; color:var(--muted);
+    font-family:-apple-system,"PingFang SC",sans-serif; }
+  .toc-sum a { color:inherit; text-decoration:none; border-bottom:1px dotted transparent; }
+  .toc-sum a:hover { border-bottom-color:var(--accent); color:var(--accent); }
+
+  .toc-ch { margin:2.4rem 0 0; padding-top:1.4rem; border-top:1px solid var(--rule); }
+  .toc-ch .head { display:flex; gap:1rem; align-items:baseline; }
+  .toc-ch .no { font-family:Georgia,serif; font-size:2.1rem; font-weight:800;
+    color:var(--accent); line-height:1; min-width:2rem; }
+  .toc-ch .ttl { font-size:1.15rem; font-weight:800; }
+  .toc-ch .ttl .en { display:block; font-size:0.8rem; font-weight:400;
+    color:var(--muted); font-family:-apple-system,"PingFang SC",sans-serif;
+    letter-spacing:0.04em; }
+  .toc-ch .blurb { font-size:0.9rem; color:#4a443c; margin:0.7rem 0 0.9rem;
+    padding-left:3rem; }
+  @media (max-width:620px) { .toc-ch .blurb { padding-left:0; } }
+  .sec-list { list-style:none; padding:0 0 0 3rem; margin:0; }
+  @media (max-width:620px) { .sec-list { padding-left:0; } }
+  .sec-list li { display:flex; align-items:baseline; gap:0.4rem;
+    font-size:0.91rem; margin:0.34rem 0; }
+  .sec-list .dots { flex:1; border-bottom:1px dotted #c9bda8;
+    transform:translateY(-0.28rem); min-width:1.2rem; }
+  .sec-list .pg { font-family:"SF Mono",Menlo,monospace; font-size:0.8rem;
+    color:var(--muted); }
+  .sec-list li.sub { padding-left:1.2rem; font-size:0.87rem; }
+
+  /* 原则 / 清单 */
+  .principle { margin:1.5rem 0; padding:1.1rem 1.4rem; background:#fffdf8;
+    border:1px solid var(--rule); border-radius:12px; }
+  .principle h3 { margin:0 0 0.35rem; font-size:1rem; color:var(--accent); }
+  .principle p { margin:0.3rem 0; font-size:0.93rem; }
+
+  .tips { counter-reset:tip; margin:1.6rem 0; padding:0; list-style:none;
+    display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+  @media (max-width:720px) { .tips { grid-template-columns:1fr; } }
+  .tips li { counter-increment:tip; position:relative; padding:1rem 1.1rem 0.9rem 3.1rem;
+    background:var(--bg2); border-radius:12px; font-size:0.9rem; }
+  .tips li::before { content:counter(tip); position:absolute; left:0.9rem; top:0.95rem;
+    width:1.7rem; height:1.7rem; line-height:1.7rem; text-align:center;
+    border-radius:50%; background:var(--accent); color:#fff; font-size:0.85rem;
+    font-family:-apple-system,"PingFang SC",sans-serif; font-weight:700; }
+  .tips li b { display:block; color:var(--accent2); font-size:0.94rem;
+    margin-bottom:0.2rem; }
+
+  /* 二选一判断 */
+  .fork { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin:1.8rem 0; }
+  @media (max-width:760px) { .fork { grid-template-columns:1fr; } }
+  .fork .col { border:2px solid var(--rule); border-radius:14px;
+    padding:1.2rem 1.3rem; background:#fffdf8; }
+  .fork .col.yes { border-color:var(--accent2); }
+  .fork .col.no { border-color:var(--accent); }
+  .fork .col h2 { font-size:0.95rem; margin:0 0 0.8rem;
+    font-family:-apple-system,"PingFang SC",sans-serif; }
+  .fork .q { display:flex; gap:0.6rem; margin:0.7rem 0; font-size:0.92rem;
+    align-items:flex-start; }
+  .fork .q .n { flex:none; width:1.4rem; height:1.4rem; line-height:1.4rem;
+    text-align:center; border-radius:50%; background:var(--bg2);
+    border:1px solid var(--rule); font-size:0.75rem; font-weight:700;
+    font-family:-apple-system,"PingFang SC",sans-serif; margin-top:0.25rem; }
+  .fork .verdict { margin-top:1rem; padding-top:0.8rem; border-top:1px dashed var(--rule);
+    font-weight:800; font-size:0.95rem; }
+  .fork .col.yes .verdict { color:var(--accent2); }
+  .fork .col.no .verdict { color:var(--accent); }
+  .names { font-size:0.87rem; line-height:1.95; color:#4a443c; }
+  .bullets { margin:1.2rem 0; padding-left:1.4rem; }
+  .bullets li { margin:0.5rem 0; }
+  code { font-family:"SF Mono",Menlo,Consolas,monospace; font-size:0.88em;
+    background:var(--bg2); padding:0.08rem 0.35rem; border-radius:4px; }
+  pre { background:#2b2620; color:#e8e0d0; padding:0.9rem 1.2rem; border-radius:10px;
+    overflow-x:auto; font-family:"SF Mono",Menlo,Consolas,monospace;
+    font-size:0.84rem; line-height:1.7; margin:1rem 0; }
+  pre code { background:none; padding:0; color:inherit; font-size:inherit; }
+  .rule-sep { height:1px; background:var(--rule); margin:2.2rem 0; }
+
+  /* 通用块 */
+  .note { font-size:0.88rem; color:var(--muted); }
+  .callout { margin:1.6rem 0; padding:1rem 1.4rem; background:#f6e9df;
+    border-left:5px solid var(--accent); border-radius:0 10px 10px 0;
+    font-size:0.92rem; }
+  .callout.green { background:#edf2e9; border-left-color:var(--accent2); }
+  .callout p { margin:0.35rem 0; }
+  .bubble { display:flex; gap:1rem; align-items:flex-start; margin:1.6rem 0; }
+  .bubble .avatar { font-size:2.2rem; line-height:1; }
+  .bubble .text { background:var(--bg2); border:2px solid var(--rule);
+    border-radius:16px; padding:0.7rem 1rem; font-size:0.92rem; font-style:italic; }
+  .ack { font-size:0.92rem; }
+  .ack p { margin:0.8rem 0; }
+  .ack .lead { font-weight:700; color:var(--accent2); margin-top:1.6rem; }
+  .ack .names { font-size:0.86rem; color:#4a443c; line-height:1.9; }
+  .two-col { columns:2; column-gap:1.6rem; font-size:0.86rem; line-height:1.85; }
+  @media (max-width:680px) { .two-col { columns:1; } }
+  .runner { font-family:-apple-system,"PingFang SC",sans-serif; font-size:0.72rem;
+    letter-spacing:0.18em; color:var(--muted); border-bottom:1px solid var(--rule);
+    padding-bottom:0.4rem; margin-bottom:1.2rem; display:flex;
+    justify-content:space-between; }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--rule);
+    font-size:0.82rem; color:var(--muted); font-family:-apple-system,"PingFang SC",sans-serif;
+    display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+
+  .hfj-nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:flex-end;
+    margin:2.4rem 0 1rem; padding-top:1rem; border-top:1px dashed #ddd3c2;
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; }
+  .hfj-nav a, .hfj-nav .off { display:inline-flex; align-items:center; justify-content:center;
+    min-height:2.2rem; padding:0 .95rem; border-radius:999px; border:1px solid #ddd3c2;
+    background:#f2ede2; color:#2b2620; font-size:.8rem; text-decoration:none; white-space:nowrap;
+    transition:background .15s ease,border-color .15s ease,color .15s ease; }
+  .hfj-nav a:hover { background:#b3541e; border-color:#b3541e; color:#fff; }
+  .hfj-nav .home { font-weight:700; background:#faf7f0; }
+  .hfj-nav .off { opacity:.38; }
+  @media (max-width:560px) {
+    .hfj-nav { justify-content:stretch; }
+    .hfj-nav a, .hfj-nav .off { flex:1; padding:0 .4rem; font-size:.78rem; }
+  }
+  @media print { .hfj-nav { display:none; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="kicker">引言 · acknowledgments · 原书 p34–35</div>
+  <h1>致谢：第 3 版</h1>
+  <div class="subtitle">Technical Reviewers &amp; Acknowledgments for the 3rd Edition</div>
+
+  <h2>第 3 版技术审校</h2>
+
+  <div class="author">
+    <div class="ava">M</div>
+    <div>
+      <h3>Marc Loy</h3>
+      <div class="role">技术审校</div>
+      <p>Marc 很早就在 Sun Microsystems 做 Java 培训（向 HotJava 致敬！），从此再没回头。他写过若干本早期 Java 书和培训课程，其间与美国、欧洲、亚洲的各类公司合作。最近他为 O'Reilly 写了《Smaller C》，并合著了《Learning Java》第五版。Marc 目前住在俄亥俄州，是一名软件开发者与创客，专长于微控制器。</p>
+    </div>
+  </div>
+
+  <div class="author">
+    <div class="ava">A</div>
+    <div>
+      <h3>Abraham Marin-Perez</h3>
+      <div class="role">技术审校</div>
+      <p>Abraham 是 Java 程序员、顾问、作者和公开演讲者，在多个行业有十余年经验。他原籍西班牙瓦伦西亚，职业生涯大部分在伦敦度过，与 JP Morgan、英国内政部等机构合作，且常与 Equal Experts 协作。想到自己的经历可能对别人有用，他成了 InfoQ 的 Java 新闻编辑，写了《Real-World Maintainable Software》，并合著了《Continuous Delivery in Java》。他也参与运营伦敦 Java 社区。Abraham 永远是个学习者，目前正在攻读物理学学位。</p>
+    </div>
+  </div>
+
+  <h2>第 3 版其他需要感谢的人</h2>
+
+  <div class="ack">
+    <p class="lead">在 O'Reilly：</p>
+    <p>非常感谢 Zan McQuade 和 Nicole Taché，让我们终于把这一版做出来了！Zan，谢谢你让 Trisha 重新和 Head First 的世界连上线；Nicole，你把我们逼着把这件事干完，干得漂亮。还要谢谢 Meghan Blanchette——她一百年前就离开 O'Reilly 了，但 2014 年正是她把 Bert 和 Trisha 介绍给了彼此。</p>
+
+    <p class="lead">Trisha 想感谢：</p>
+    <p>Helen Scott，感谢她对新增话题的频繁反馈。她一次次拦住我，不让我讲得太深、也不让我假设读者懂得太多；她是真正的「学习者代言人」。我已经等不及要在下一个项目里和她更紧密地合作了。</p>
+    <p>我在 JetBrains 的团队，感谢他们的耐心与鼓励：Dalia Abo Sheasha，感谢她试读 lambda 与 stream 那一章；Mala Gupta，感谢她给了我关于现代 Java 认证的、正合我需要的信息。特别感谢 Hadi Hariri 一直以来的支持。</p>
+    <p>「周五酒吧午餐」的 informaticos 们，感谢你们容忍我在午餐时间聊当天或当周我正试图解释的 Java 某个方面；还有 Alys、Jen 和 Clare，谢谢你们帮我想清楚什么时候该把这本书排在家庭前面。谢谢 Holly Cummins 在最后一刻找到一个 bug。</p>
+    <p>Evie 和 Amy，谢谢你们对「如何用 Java 的 Optional 类型改进冰淇淋示例」提出的建议。谢谢你们真心关心我的进度，也谢谢你们听说我写完时，那种不由自主的高举双手击掌。</p>
+    <p>没有 Israel Boza Rodriguez，这一切都不可能。你忍受我用「你觉得 CountDownLatch 教初学者是不是太冷门了？」这种问题，去打断「晚饭吃什么？」这类重要对话。更关键的是，你帮我腾出了空间和时间来做这本书，还一次次提醒我当初为什么想接这个项目。</p>
+    <p>谢谢 Bert 和 Kathy 带我走上这段旅程。可以说，能跟「马主人」本人学怎么当一名 Head First 作者，是我的荣幸。</p>
+
+    <p class="lead">Bert 和 Kathy 想感谢：</p>
+    <p>Beth Robson 和 Eric Freeman，感谢你们对 Head First 系列一贯而强悍的支持。特别感谢 Beth，和我们进行了那么多次关于「该教哪些 Java 新话题、该怎么教」的讨论。</p>
+    <p>Paul Wheaton 和 CodeRanch.com（也就是 JavaRanch）出色的版主们，感谢你们让 CodeRanch 始终是 Java 初学者的友好之地。特别感谢 Campbell Ritchie、Jeanne Boyarsky、Stephan van Hulst、Rob Spoor、Tim Cooke、Fred Rosenberger 和 Frits Walraven，感谢你们就「第 2 版以来 Java 真正重要的新增内容」提供了宝贵意见。</p>
+    <p>Dave Gustafson，谢谢你教会我那么多关于软件开发和攀岩的事，也谢谢你关于编程现状的精彩讨论。Eric Normand，谢谢你教了我们一点函数式编程（FP），并帮我们想办法把 FP 里最好的几个想法悄悄塞进一本面向对象的书。Simon Roberts，感谢你持续而热情地在世界各地教 Java。谢谢 Heinz Kabutz 和 Venkat Subramaniam，帮我们探索 Java Stream 的角角落落。</p>
+    <p>Laura Baldwin 和 Mike Loukides，感谢你们这些年对 Head First 的不懈支持。</p>
+    <p>Ron Bilodeau 和 Kristen Brown，感谢你们出色、始终耐心而友好的支持。</p>
+  </div>
+
+<nav class="hfj-nav" aria-label="翻页">
+  <a class="prev" href="f26-last-minute-things.html" title="上一页 · F26">← F26</a>
+  <a class="home" href="index.html" title="返回目录（键盘 ← → 也可翻页）">目录</a>
+  <a class="next" href="f28-thanks-earlier.html" title="下一页 · F28">F28 →</a>
+</nav>
+<script>
+(function () {
+  var prev = document.querySelector('.hfj-nav .prev'),
+      next = document.querySelector('.hfj-nav .next');
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target && e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.target && e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+    if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+  });
+})();
+</script>
+<footer>
+    <span>译自《Head First Java》第 3 版 · 卷首 · 仅供学习交流</span>
+    <span>原书 p34–35</span>
+  </footer>
+
+</div>
+</body>
+</html>

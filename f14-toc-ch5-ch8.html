@@ -1,0 +1,379 @@
+<!-- Generated for the Head First Java Chinese translation -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>目录详解：第 5–8 章 — Head First Java 译文 F14</title>
+<style>
+  :root {
+    --bg:#faf7f0; --bg2:#f2ede2; --ink:#2b2620; --muted:#7a7166;
+    --rule:#ddd3c2; --accent:#b3541e; --accent2:#2f5d50;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,serif;
+    font-size:16px; line-height:1.85; }
+  .page { max-width:880px; margin:0 auto; padding:3rem 1.5rem 4rem; }
+  .kicker { text-align:right; font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.85rem; letter-spacing:0.12em; color:var(--muted); margin-bottom:0.5rem; }
+  h1 { font-size:2rem; line-height:1.28; margin:0 0 0.3rem; font-weight:800; }
+  .subtitle { color:var(--muted); font-size:0.95rem; margin-bottom:2rem; }
+  h2 { font-size:1.12rem; margin:2rem 0 0.6rem; color:var(--accent2); }
+  h3 { font-size:1rem; margin:1.5rem 0 0.4rem; color:var(--accent2); }
+  p { margin:0.9rem 0; }
+  strong { color:var(--accent); font-weight:700; }
+  em.term { font-style:normal; color:var(--accent2); font-weight:600; }
+
+  /* 封面 */
+  .cover { max-width:540px; margin:1.6rem auto 2rem; background:#164a3f;
+    color:#f7f0df; border-radius:4px; padding:0; overflow:hidden;
+    box-shadow:10px 12px 0 rgba(43,38,32,0.16); border:1px solid #0c241f; }
+  .cover .band { background:#e8b64c; color:#20201c; text-align:center;
+    font-family:-apple-system,"PingFang SC",sans-serif; font-size:0.78rem;
+    letter-spacing:0.24em; padding:0.5rem 0.5rem; font-weight:700; }
+  .cover .band span { display:block; font-size:0.62rem; letter-spacing:0.16em;
+    font-weight:400; margin-top:0.15rem; opacity:0.75; }
+  .cover .inner { padding:2.6rem 2.2rem 2rem; text-align:center; }
+  .cover .series { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.72rem; letter-spacing:0.3em; color:#a9c8bd; margin-bottom:0.6rem; }
+  .cover .big { font-family:Georgia,"Times New Roman",serif; font-size:5.4rem;
+    line-height:0.95; font-weight:800; letter-spacing:-0.02em; color:#f7f0df; }
+  .cover .ed { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.92rem; letter-spacing:0.34em; color:#e8b64c; margin-top:0.5rem; }
+  .cover .desc { margin:1.3rem auto 0; max-width:20rem; font-size:1.02rem;
+    line-height:1.7; color:#e6ded0; }
+  .cover .desc small { display:block; font-size:0.76rem; letter-spacing:0.08em;
+    color:#9fbcb1; margin-top:0.3rem; font-family:-apple-system,"PingFang SC",sans-serif; }
+  .cover .rule { width:3rem; height:2px; background:#e8b64c; margin:1.4rem auto; }
+  .cover .who { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.9rem; letter-spacing:0.05em; color:#f7f0df; line-height:1.9; }
+  .cover .who b { color:#e8b64c; font-weight:600; }
+  .cover .foot { background:#0f332b; color:#9fbcb1; text-align:center;
+    font-family:-apple-system,"PingFang SC",sans-serif; font-size:0.68rem;
+    letter-spacing:0.2em; padding:0.55rem; }
+
+  /* 书单 */
+  .series-list { list-style:none; padding:0; margin:1.6rem 0;
+    display:grid; grid-template-columns:1fr 1fr; gap:0.55rem; }
+  @media (max-width:680px) { .series-list { grid-template-columns:1fr; } }
+  .series-list li { background:var(--bg2); border:1px solid var(--rule);
+    border-radius:8px; padding:0.55rem 0.9rem; font-size:0.92rem; }
+  .series-list li .en { display:block; font-size:0.72rem; color:var(--muted);
+    font-family:-apple-system,"PingFang SC",sans-serif; letter-spacing:0.02em; }
+
+  /* 赞誉 */
+  .quote { margin:1.2rem 0; padding:1rem 1.3rem 0.9rem; background:#fffdf8;
+    border:1px solid var(--rule); border-left:4px solid var(--accent2);
+    border-radius:0 10px 10px 0; }
+  .quote p { margin:0 0 0.5rem; font-size:0.95rem; }
+  .quote .by { font-size:0.83rem; color:var(--muted); text-align:right;
+    font-family:-apple-system,"PingFang SC",sans-serif; line-height:1.6; }
+  .quote .by b { color:var(--accent); font-weight:700; }
+
+  /* 扉页 / 献词 */
+  .titlepage { text-align:center; padding:3rem 1rem 2rem; }
+  .titlepage .t1 { font-family:Georgia,serif; font-size:3rem; font-weight:800;
+    line-height:1.1; letter-spacing:-0.01em; }
+  .titlepage .t2 { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.85rem; letter-spacing:0.3em; color:var(--muted); margin-top:0.6rem; }
+  .dream-box { max-width:22rem; margin:2.4rem auto 0; border:2px solid var(--accent2);
+    border-radius:14px; padding:1.4rem 1.5rem; background:var(--bg2);
+    font-size:0.95rem; text-align:left; line-height:1.8; }
+  .dream-box .tag { display:block; font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.74rem; letter-spacing:0.16em; color:var(--accent2);
+    font-weight:700; margin-bottom:0.5rem; }
+  .dedication { text-align:center; padding:4rem 1rem; }
+  .dedication .item { margin:2.2rem 0; }
+  .dedication .who { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.78rem; letter-spacing:0.2em; color:var(--muted); margin-bottom:0.5rem; }
+  .dedication .line { font-size:1.15rem; line-height:2; }
+  .dedication .line small { display:block; font-size:0.9rem; color:var(--muted); }
+
+  /* 版权页 */
+  .imprint { font-size:0.86rem; line-height:1.8; color:#3d372f; }
+  .imprint p { margin:0.55rem 0; }
+  .imprint .hd { font-weight:700; color:var(--ink); margin-top:1.4rem;
+    font-family:-apple-system,"PingFang SC",sans-serif; font-size:0.82rem;
+    letter-spacing:0.08em; }
+  .imprint .meta { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.8rem; color:var(--muted); }
+  .imprint .legal { font-size:0.78rem; color:var(--muted); line-height:1.75; }
+  .isbn { display:inline-block; margin-top:1.2rem; border:1px solid var(--rule);
+    border-radius:6px; padding:0.3rem 0.7rem; font-family:"SF Mono",Menlo,monospace;
+    font-size:0.8rem; background:var(--bg2); }
+
+  /* 作者 */
+  .author { display:grid; grid-template-columns:5.4rem 1fr; gap:1.4rem;
+    margin:2rem 0; align-items:start; }
+  @media (max-width:620px) { .author { grid-template-columns:1fr; } }
+  .author .ava { width:5.4rem; height:5.4rem; border-radius:50%;
+    background:var(--bg2); border:2px solid var(--rule); display:flex;
+    align-items:center; justify-content:center; font-size:2.1rem;
+    font-family:Georgia,serif; color:var(--accent2); font-weight:700; }
+  .author h3 { margin:0 0 0.1rem; font-size:1.15rem; color:var(--ink); }
+  .author .role { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.76rem; letter-spacing:0.12em; color:var(--accent);
+    margin-bottom:0.7rem; }
+  .author p { margin:0.6rem 0; font-size:0.94rem; }
+  .author .contact { font-size:0.84rem; color:var(--muted);
+    font-family:-apple-system,"PingFang SC",sans-serif; }
+
+  /* 目录 */
+  .toc-sum { width:100%; border-collapse:collapse; margin:1.4rem 0; font-size:0.92rem; }
+  .toc-sum th, .toc-sum td { border-bottom:1px solid var(--rule);
+    padding:0.5rem 0.5rem; text-align:left; vertical-align:top; }
+  .toc-sum th { font-family:-apple-system,"PingFang SC",sans-serif;
+    font-size:0.76rem; letter-spacing:0.1em; color:var(--muted); font-weight:600; }
+  .toc-sum td.no { width:2.2rem; color:var(--accent); font-weight:700;
+    font-family:-apple-system,"PingFang SC",sans-serif; }
+  .toc-sum td.pg { width:3rem; text-align:right; color:var(--muted);
+    font-family:"SF Mono",Menlo,monospace; font-size:0.82rem; }
+  .toc-sum td .en { display:block; font-size:0.76rem; color:var(--muted);
+    font-family:-apple-system,"PingFang SC",sans-serif; }
+  .toc-sum a { color:inherit; text-decoration:none; border-bottom:1px dotted transparent; }
+  .toc-sum a:hover { border-bottom-color:var(--accent); color:var(--accent); }
+
+  .toc-ch { margin:2.4rem 0 0; padding-top:1.4rem; border-top:1px solid var(--rule); }
+  .toc-ch .head { display:flex; gap:1rem; align-items:baseline; }
+  .toc-ch .no { font-family:Georgia,serif; font-size:2.1rem; font-weight:800;
+    color:var(--accent); line-height:1; min-width:2rem; }
+  .toc-ch .ttl { font-size:1.15rem; font-weight:800; }
+  .toc-ch .ttl .en { display:block; font-size:0.8rem; font-weight:400;
+    color:var(--muted); font-family:-apple-system,"PingFang SC",sans-serif;
+    letter-spacing:0.04em; }
+  .toc-ch .blurb { font-size:0.9rem; color:#4a443c; margin:0.7rem 0 0.9rem;
+    padding-left:3rem; }
+  @media (max-width:620px) { .toc-ch .blurb { padding-left:0; } }
+  .sec-list { list-style:none; padding:0 0 0 3rem; margin:0; }
+  @media (max-width:620px) { .sec-list { padding-left:0; } }
+  .sec-list li { display:flex; align-items:baseline; gap:0.4rem;
+    font-size:0.91rem; margin:0.34rem 0; }
+  .sec-list .dots { flex:1; border-bottom:1px dotted #c9bda8;
+    transform:translateY(-0.28rem); min-width:1.2rem; }
+  .sec-list .pg { font-family:"SF Mono",Menlo,monospace; font-size:0.8rem;
+    color:var(--muted); }
+  .sec-list li.sub { padding-left:1.2rem; font-size:0.87rem; }
+
+  /* 原则 / 清单 */
+  .principle { margin:1.5rem 0; padding:1.1rem 1.4rem; background:#fffdf8;
+    border:1px solid var(--rule); border-radius:12px; }
+  .principle h3 { margin:0 0 0.35rem; font-size:1rem; color:var(--accent); }
+  .principle p { margin:0.3rem 0; font-size:0.93rem; }
+
+  .tips { counter-reset:tip; margin:1.6rem 0; padding:0; list-style:none;
+    display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+  @media (max-width:720px) { .tips { grid-template-columns:1fr; } }
+  .tips li { counter-increment:tip; position:relative; padding:1rem 1.1rem 0.9rem 3.1rem;
+    background:var(--bg2); border-radius:12px; font-size:0.9rem; }
+  .tips li::before { content:counter(tip); position:absolute; left:0.9rem; top:0.95rem;
+    width:1.7rem; height:1.7rem; line-height:1.7rem; text-align:center;
+    border-radius:50%; background:var(--accent); color:#fff; font-size:0.85rem;
+    font-family:-apple-system,"PingFang SC",sans-serif; font-weight:700; }
+  .tips li b { display:block; color:var(--accent2); font-size:0.94rem;
+    margin-bottom:0.2rem; }
+
+  /* 二选一判断 */
+  .fork { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin:1.8rem 0; }
+  @media (max-width:760px) { .fork { grid-template-columns:1fr; } }
+  .fork .col { border:2px solid var(--rule); border-radius:14px;
+    padding:1.2rem 1.3rem; background:#fffdf8; }
+  .fork .col.yes { border-color:var(--accent2); }
+  .fork .col.no { border-color:var(--accent); }
+  .fork .col h2 { font-size:0.95rem; margin:0 0 0.8rem;
+    font-family:-apple-system,"PingFang SC",sans-serif; }
+  .fork .q { display:flex; gap:0.6rem; margin:0.7rem 0; font-size:0.92rem;
+    align-items:flex-start; }
+  .fork .q .n { flex:none; width:1.4rem; height:1.4rem; line-height:1.4rem;
+    text-align:center; border-radius:50%; background:var(--bg2);
+    border:1px solid var(--rule); font-size:0.75rem; font-weight:700;
+    font-family:-apple-system,"PingFang SC",sans-serif; margin-top:0.25rem; }
+  .fork .verdict { margin-top:1rem; padding-top:0.8rem; border-top:1px dashed var(--rule);
+    font-weight:800; font-size:0.95rem; }
+  .fork .col.yes .verdict { color:var(--accent2); }
+  .fork .col.no .verdict { color:var(--accent); }
+  .names { font-size:0.87rem; line-height:1.95; color:#4a443c; }
+  .bullets { margin:1.2rem 0; padding-left:1.4rem; }
+  .bullets li { margin:0.5rem 0; }
+  code { font-family:"SF Mono",Menlo,Consolas,monospace; font-size:0.88em;
+    background:var(--bg2); padding:0.08rem 0.35rem; border-radius:4px; }
+  pre { background:#2b2620; color:#e8e0d0; padding:0.9rem 1.2rem; border-radius:10px;
+    overflow-x:auto; font-family:"SF Mono",Menlo,Consolas,monospace;
+    font-size:0.84rem; line-height:1.7; margin:1rem 0; }
+  pre code { background:none; padding:0; color:inherit; font-size:inherit; }
+  .rule-sep { height:1px; background:var(--rule); margin:2.2rem 0; }
+
+  /* 通用块 */
+  .note { font-size:0.88rem; color:var(--muted); }
+  .callout { margin:1.6rem 0; padding:1rem 1.4rem; background:#f6e9df;
+    border-left:5px solid var(--accent); border-radius:0 10px 10px 0;
+    font-size:0.92rem; }
+  .callout.green { background:#edf2e9; border-left-color:var(--accent2); }
+  .callout p { margin:0.35rem 0; }
+  .bubble { display:flex; gap:1rem; align-items:flex-start; margin:1.6rem 0; }
+  .bubble .avatar { font-size:2.2rem; line-height:1; }
+  .bubble .text { background:var(--bg2); border:2px solid var(--rule);
+    border-radius:16px; padding:0.7rem 1rem; font-size:0.92rem; font-style:italic; }
+  .ack { font-size:0.92rem; }
+  .ack p { margin:0.8rem 0; }
+  .ack .lead { font-weight:700; color:var(--accent2); margin-top:1.6rem; }
+  .ack .names { font-size:0.86rem; color:#4a443c; line-height:1.9; }
+  .two-col { columns:2; column-gap:1.6rem; font-size:0.86rem; line-height:1.85; }
+  @media (max-width:680px) { .two-col { columns:1; } }
+  .runner { font-family:-apple-system,"PingFang SC",sans-serif; font-size:0.72rem;
+    letter-spacing:0.18em; color:var(--muted); border-bottom:1px solid var(--rule);
+    padding-bottom:0.4rem; margin-bottom:1.2rem; display:flex;
+    justify-content:space-between; }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--rule);
+    font-size:0.82rem; color:var(--muted); font-family:-apple-system,"PingFang SC",sans-serif;
+    display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+
+  .hfj-nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:flex-end;
+    margin:2.4rem 0 1rem; padding-top:1rem; border-top:1px dashed #ddd3c2;
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; }
+  .hfj-nav a, .hfj-nav .off { display:inline-flex; align-items:center; justify-content:center;
+    min-height:2.2rem; padding:0 .95rem; border-radius:999px; border:1px solid #ddd3c2;
+    background:#f2ede2; color:#2b2620; font-size:.8rem; text-decoration:none; white-space:nowrap;
+    transition:background .15s ease,border-color .15s ease,color .15s ease; }
+  .hfj-nav a:hover { background:#b3541e; border-color:#b3541e; color:#fff; }
+  .hfj-nav .home { font-weight:700; background:#faf7f0; }
+  .hfj-nav .off { opacity:.38; }
+  @media (max-width:560px) {
+    .hfj-nav { justify-content:stretch; }
+    .hfj-nav a, .hfj-nav .off { flex:1; padding:0 .4rem; font-size:.78rem; }
+  }
+  @media print { .hfj-nav { display:none; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="kicker">卷首 · table of contents · 原书 p17</div>
+  <h1>目录详解：第 5–6 章</h1>
+  <div class="subtitle">Table of Contents (the real thing) — chapters 5–6</div>
+
+  <div class="toc-ch">
+    <div class="head"><div class="no">5</div>
+      <div class="ttl">加料的方法<span class="en">Extra-Strength Methods</span></div>
+    </div>
+    <p class="blurb">给我们的方法加点肌肉。你已经玩过变量、摆弄过几个对象、写过一点代码。但你还需要更多工具：比如运算符，比如循环。生成随机数大概会有用；把 String 转成 int 也不错，对，那个挺酷。那为什么不干脆一边造个真东西、一边把这些都学了——从头写一个程序（并且测试它），看看那是什么感觉。也许做个游戏，比如「击沉创业公司」（类似战舰棋）。</p>
+    <ul class="sec-list">
+      <li>我们来做一个战舰风格的游戏：「击沉创业公司」<span class="dots"></span><span class="pg">96</span></li>
+      <li>开发一个类<span class="dots"></span><span class="pg">99</span></li>
+      <li>写方法的实现<span class="dots"></span><span class="pg">101</span></li>
+      <li>给 SimpleStartup 类写测试代码<span class="dots"></span><span class="pg">102</span></li>
+      <li>checkYourself() 方法<span class="dots"></span><span class="pg">104</span></li>
+      <li>SimpleStartupGame 类的预备代码<span class="dots"></span><span class="pg">108</span></li>
+      <li>游戏的 main() 方法<span class="dots"></span><span class="pg">110</span></li>
+      <li>来玩一局<span class="dots"></span><span class="pg">113</span></li>
+      <li>关于 for 循环的更多内容<span class="dots"></span><span class="pg">114</span></li>
+      <li>增强 for 循环<span class="dots"></span><span class="pg">116</span></li>
+      <li>基本类型的强制转换<span class="dots"></span><span class="pg">117</span></li>
+      <li>练习<span class="dots"></span><span class="pg">118</span></li>
+      <li>练习答案<span class="dots"></span><span class="pg">122</span></li>
+    </ul>
+  </div>
+
+  <div class="toc-ch">
+    <div class="head"><div class="no">6</div>
+      <div class="ttl">使用 Java 类库<span class="en">Using the Java Library</span></div>
+    </div>
+    <p class="blurb">Java 自带几百个现成的类。只要你知道怎么从 Java 类库里找到需要的东西（大家通常叫它 Java API），就不必重新发明轮子。你有更重要的事要做。既然要写代码，那就只写你这个应用独有的那部分。核心 Java 类库是一大堆等着你像积木一样拼起来的类。</p>
+
+    <div class="bubble">
+      <div class="avatar">💬</div>
+      <div class="text">「知道 java.util 包里有个 ArrayList 挺好的。可要是没人告诉我，我自己怎么可能想得到？」<br>
+      <span style="font-style:normal;font-size:0.84rem;color:var(--muted);">—— Julia，31 岁，手模</span></div>
+    </div>
+
+    <ul class="sec-list">
+      <li>上一章我们留了个悬念：一个 bug<span class="dots"></span><span class="pg">126</span></li>
+      <li>醒醒，闻闻类库的味道<span class="dots"></span><span class="pg">132</span></li>
+      <li>ArrayList 能做的一些事<span class="dots"></span><span class="pg">133</span></li>
+      <li>ArrayList 与普通数组的对比<span class="dots"></span><span class="pg">137</span></li>
+      <li>来做真正的游戏：「击沉创业公司」<span class="dots"></span><span class="pg">140</span></li>
+      <li>真正的 StartupBust 类的预备代码<span class="dots"></span><span class="pg">144</span></li>
+      <li>Startup 类的最终版本<span class="dots"></span><span class="pg">150</span></li>
+      <li>超级强大的布尔表达式<span class="dots"></span><span class="pg">151</span></li>
+      <li>使用类库（Java API）<span class="dots"></span><span class="pg">154</span></li>
+      <li>练习<span class="dots"></span><span class="pg">163</span></li>
+      <li>练习答案<span class="dots"></span><span class="pg">165</span></li>
+    </ul>
+  </div>
+
+  <div class="toc-ch">
+    <div class="head"><div class="no">7</div>
+      <div class="ttl">在 Objectville 过上更好的生活<span class="en">Better Living in Objectville</span></div>
+    </div>
+    <p class="blurb">写程序的时候，把未来放在心上。如果你写的代码，别人能轻松扩展呢？如果你写的代码足够灵活，能扛住那些烦人的、最后一刻才来的需求变更呢？等你上了「多态计划」，你会学到改善类设计的 5 个步骤、玩转多态的 3 个花招、让代码灵活的 8 种办法；现在下单，还附赠一课「利用继承的 4 个诀窍」。</p>
+    <ul class="sec-list">
+      <li>椅子大战，重访……<span class="dots"></span><span class="pg">168</span></li>
+      <li>理解继承<span class="dots"></span><span class="pg">170</span></li>
+      <li>为一个动物模拟程序设计继承树<span class="dots"></span><span class="pg">172</span></li>
+      <li>再找找还有哪些继承机会<span class="dots"></span><span class="pg">175</span></li>
+      <li>用 IS-A 与 HAS-A 判断<span class="dots"></span><span class="pg">179</span></li>
+      <li>怎么知道你设计的继承是对的？<span class="dots"></span><span class="pg">181</span></li>
+      <li>用继承做设计时，你是在用还是在滥用？<span class="dots"></span><span class="pg">183</span></li>
+      <li>守住契约：覆写的规则<span class="dots"></span><span class="pg">192</span></li>
+      <li>重载一个方法<span class="dots"></span><span class="pg">193</span></li>
+      <li>练习<span class="dots"></span><span class="pg">194</span></li>
+      <li>练习答案<span class="dots"></span><span class="pg">197</span></li>
+    </ul>
+  </div>
+
+  <div class="toc-ch">
+    <div class="head"><div class="no">8</div>
+      <div class="ttl">认真的多态<span class="en">Serious Polymorphism</span></div>
+    </div>
+    <p class="blurb">继承只是个开始。要真正把多态用起来，我们需要接口。必须超越简单的继承，去获得那种只有「面向接口设计和编码」才能带来的灵活性。接口是什么？一个 100% 的抽象类。抽象类是什么？一个不能被实例化的类。那它有什么用？读这一章……</p>
+
+    <div class="callout green">
+      <p><strong>把它记牢（Make it Stick）</strong></p>
+      <p style="font-style:italic;">玫瑰是红的，紫罗兰是蓝的；<br>Square IS-A Shape，反过来可不成立。<br>
+      玫瑰是红的，紫罗兰很贵；<br>Beer IS-A Drink，但不是所有饮料都是啤酒。</p>
+      <p class="note">好，轮到你了。写一句能体现 IS-A 关系「单向性」的句子。记住：如果 X extends Y，那么「X IS-A Y」必须说得通。</p>
+    </div>
+
+    <ul class="sec-list">
+      <li>设计的时候是不是漏了什么？<span class="dots"></span><span class="pg">200</span></li>
+      <li>编译器不让你实例化抽象类<span class="dots"></span><span class="pg">203</span></li>
+      <li>抽象 vs. 具体<span class="dots"></span><span class="pg">204</span></li>
+      <li>你必须实现所有抽象方法<span class="dots"></span><span class="pg">206</span></li>
+      <li>多态在行动<span class="dots"></span><span class="pg">208</span></li>
+      <li>为什么不干脆把类写得更通用，什么都能装？<span class="dots"></span><span class="pg">210</span></li>
+      <li>当一条 Dog 不肯像 Dog 那样行事<span class="dots"></span><span class="pg">214</span></li>
+      <li>来探讨几种设计方案<span class="dots"></span><span class="pg">221</span></li>
+      <li>编写并实现 Pet 接口<span class="dots"></span><span class="pg">227</span></li>
+      <li>调用父类版本的方法<span class="dots"></span><span class="pg">230</span></li>
+      <li>练习<span class="dots"></span><span class="pg">232</span></li>
+      <li>练习答案<span class="dots"></span><span class="pg">235</span></li>
+    </ul>
+  </div>
+
+<nav class="hfj-nav" aria-label="翻页">
+  <a class="prev" href="f13-toc-ch1-ch4.html" title="上一页 · F13">← F13</a>
+  <a class="home" href="index.html" title="返回目录（键盘 ← → 也可翻页）">目录</a>
+  <a class="next" href="f15-toc-ch9-ch12.html" title="下一页 · F15">F15 →</a>
+</nav>
+<script>
+(function () {
+  var prev = document.querySelector('.hfj-nav .prev'),
+      next = document.querySelector('.hfj-nav .next');
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target && e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.target && e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prev) location.href = prev.getAttribute('href');
+    if (e.key === 'ArrowRight' && next) location.href = next.getAttribute('href');
+  });
+})();
+</script>
+<footer>
+    <span>译自《Head First Java》第 3 版 · 卷首 · 仅供学习交流</span>
+    <span>原书 p17–18</span>
+  </footer>
+
+</div>
+</body>
+</html>

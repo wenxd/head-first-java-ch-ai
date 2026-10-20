@@ -31,12 +31,56 @@
     font-family:-apple-system,"PingFang SC",sans-serif; }
   footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--rule);
     font-size:0.82rem; color:var(--muted); font-family:-apple-system,"PingFang SC",sans-serif; }
+  h2.sec { font-size:0.95rem; letter-spacing:0.16em; margin:2.8rem 0 0.25rem;
+    color:var(--accent2); font-family:-apple-system,"PingFang SC",sans-serif; }
+  p.sec-note { font-size:0.8rem; color:var(--muted); margin:0 0 1rem;
+    font-family:-apple-system,"PingFang SC",sans-serif; }
+  ol.front { counter-reset:fpg 0; margin-top:1rem; }
+  ol.front li { counter-increment:fpg; }
+  ol.front a::before { content:"F" counter(fpg); color:var(--accent2); }
+  ol.front a { background:#fffdf8; }
 </style>
 </head>
 <body>
 <div class="page">
   <h1>《Head First Java》译文索引</h1>
-  <div class="subtitle">第 1–18 章 + 附录 A/B + 索引 · p1–717 · 中文译文（完整）</div>
+  <div class="subtitle">卷首（封面 · 赞誉 · 版权 · 作者 · 目录 · 如何使用本书 · 致谢）+ 第 1–18 章 + 附录 A/B + 索引 · 中文译文（完整）</div>
+
+  <h2 class="sec">卷首 · FRONT MATTER</h2>
+  <p class="sec-note">原书 p1–p38 · 共 28 页 · 从封面到致谢，补齐正文之前的全部内容</p>
+  <ol class="front">
+    <li><a href="f01-cover.html">封面<span class="en">Cover</span></a></li>
+    <li><a href="f02-head-first-series.html">O'Reilly Head First 系列书单<span class="en">Other books in the series</span></a></li>
+    <li><a href="f03-praise-1.html">赞誉（一）：第 3 版<span class="en">Praise for the 3rd Edition</span></a></li>
+    <li><a href="f04-praise-2.html">赞誉（二）：第 3 版<span class="en">Praise for the 3rd Edition</span></a></li>
+    <li><a href="f05-praise-earlier-1.html">赞誉（三）：早期版本与同系列<span class="en">Praise for earlier editions</span></a></li>
+    <li><a href="f06-praise-earlier-2.html">赞誉（四）：早期版本<span class="en">Praise for earlier editions</span></a></li>
+    <li><a href="f07-half-title.html">扉页<span class="en">Half title</span></a></li>
+    <li><a href="f08-copyright.html">版权页<span class="en">Copyright &amp; credits</span></a></li>
+    <li><a href="f09-dedication.html">献词<span class="en">Dedication</span></a></li>
+    <li><a href="f10-about-authors.html">关于作者：Kathy Sierra 与 Bert Bates<span class="en">The authors</span></a></li>
+    <li><a href="f11-about-trisha.html">关于作者：Trisha Gee<span class="en">The authors</span></a></li>
+    <li><a href="f12-toc-summary.html">目录（摘要）<span class="en">Table of contents (summary)</span></a></li>
+    <li><a href="f13-toc-ch1-ch4.html">目录详解：第 1–4 章<span class="en">Table of contents — ch 1–4</span></a></li>
+    <li><a href="f14-toc-ch5-ch8.html">目录详解：第 5–8 章<span class="en">Table of contents — ch 5–8</span></a></li>
+    <li><a href="f15-toc-ch9-ch12.html">目录详解：第 9–12 章<span class="en">Table of contents — ch 9–12</span></a></li>
+    <li><a href="f16-toc-ch13-ch16.html">目录详解：第 13–16 章<span class="en">Table of contents — ch 13–16</span></a></li>
+    <li><a href="f17-toc-ch17-appendix.html">目录详解：第 17–18 章与附录<span class="en">Table of contents — ch 17–18 &amp; appendices</span></a></li>
+    <li><a href="f18-intro-opening.html">引言：如何使用本书<span class="en">How to use this book</span></a></li>
+    <li><a href="f19-who-is-this-for.html">这本书适合谁？<span class="en">Who is this book for?</span></a></li>
+    <li><a href="f20-we-know-what-you-think.html">我们知道你在想什么<span class="en">We know what you're thinking</span></a></li>
+    <li><a href="f21-learning-principles.html">学习需要什么：五条 Head First 原则<span class="en">The Head First learning principles</span></a></li>
+    <li><a href="f22-metacognition.html">元认知：思考你的思考<span class="en">Metacognition</span></a></li>
+    <li><a href="f23-what-we-did.html">我们做了什么<span class="en">Here's what WE did</span></a></li>
+    <li><a href="f24-what-you-can-do.html">你可以做的十件事<span class="en">Here's what YOU can do</span></a></li>
+    <li><a href="f25-what-you-need.html">这本书你需要准备什么<span class="en">What you need for this book</span></a></li>
+    <li><a href="f26-last-minute-things.html">最后几件需要知道的事<span class="en">Last-minute things</span></a></li>
+    <li><a href="f27-thanks-3rd-edition.html">致谢：第 3 版<span class="en">Acknowledgments — 3rd Edition</span></a></li>
+    <li><a href="f28-thanks-earlier.html">致谢：第 2 版与第 1 版<span class="en">Acknowledgments — earlier editions</span></a></li>
+  </ol>
+
+  <h2 class="sec">正文 · 第 1–18 章 + 附录 + 索引</h2>
+  <p class="sec-note">原书 p1–p717 · 共 708 页 · 空白页不单独成页</p>
   <ol>
     <li><a href="p1-ch1-opening.html">第 1 章：破水而入<span class="en">dive in: a quick dip — Breaking the Surface</span></a></li>
     <li><a href="p2-the-way-java-works.html">Java 是怎么工作的<span class="en">The way Java works</span></a></li>
@@ -748,7 +792,8 @@
     <li><a href="p717-colophon.html">封底 / 出版社页<span class="en">Colophon</span></a></li>
   </ol>
   <footer>
-    <div>译自《Head First Java》（第 3 版，O'Reilly）· 第 1–18 章 + 附录 A/B + 索引 · 原书 p1–p717 全译 · 仅供学习交流</div>
+    <div>译自《Head First Java》（第 3 版，O'Reilly）· 卷首 + 第 1–18 章 + 附录 A/B + 索引 · 原书 p1–p717 全译 · 仅供学习交流</div>
+    <div>卷首 28 页（原书 p1–p38）覆盖封面、赞誉、版权、作者、目录、如何使用本书与致谢；各页可按 ← → 连续翻阅。</div>
     <div>原书空白页 p48、p70、p124、p274、p368、p460、p586、p638、p672 无内容未收，故译文共 708 页。</div>
     <div>各章起止页码见 p716「按章节速查」。</div>
   </footer>
